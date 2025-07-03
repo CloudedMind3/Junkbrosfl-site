@@ -38,7 +38,10 @@
   <header class="bg-green-600 text-white py-6 shadow-md">
     <div class="max-w-6xl mx-auto px-4 flex justify-between items-center">
       <h1 class="text-3xl font-bold">Junk Bros FL</h1>
-      <a href="tel:7274202681" class="bg-yellow-400 hover:bg-yellow-500 text-gray-900 px-4 py-2 rounded-xl font-medium btn-glow">Call Now</a>
+      <div class="space-x-4">
+        <a href="#estimate" class="bg-yellow-400 hover:bg-yellow-500 text-gray-900 px-4 py-2 rounded-xl font-medium btn-glow">Get Estimate</a>
+        <a href="tel:7274202681" class="bg-white hover:bg-gray-100 text-green-700 px-4 py-2 rounded-xl font-medium">Call Now</a>
+      </div>
     </div>
   </header>
 
@@ -72,68 +75,42 @@
   </section>
 
   <section class="bg-green-50 py-16 px-4 max-w-6xl mx-auto fade-in">
-    <h3 class="text-2xl font-bold mb-10 text-center">Pricing</h3>
-    <div class="grid md:grid-cols-4 gap-6">
-      <div class="bg-white p-6 rounded-xl shadow text-center hover:shadow-lg transition">
-        <h4 class="text-xl font-semibold mb-2">Single Item</h4>
-        <p class="text-2xl font-bold mb-2">$60–$100</p>
-        <ul class="text-sm text-gray-700 mb-4">
-          <li>• Mattress, chair, TV, etc.</li>
-          <li>• Fast pickup</li>
-          <li>• Disposal included</li>
-        </ul>
-        <a href="#estimate" class="text-green-600 font-medium hover:underline">Request Estimate</a>
+    <h3 class="text-2xl font-bold mb-10 text-center">Before & After Gallery</h3>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-white p-4 rounded-xl shadow text-center">
+        <h4 class="font-semibold mb-2">Garage Cleanout</h4>
+        <img src="https://via.placeholder.com/300x200?text=Before" alt="Before Garage" class="mx-auto mb-2 rounded">
+        <img src="https://via.placeholder.com/300x200?text=After" alt="After Garage" class="mx-auto rounded">
       </div>
-      <div class="bg-white p-6 rounded-xl shadow text-center hover:shadow-lg transition">
-        <h4 class="text-xl font-semibold mb-2">¼ Truck Load</h4>
-        <p class="text-2xl font-bold mb-2">$100–$200</p>
-        <ul class="text-sm text-gray-700 mb-4">
-          <li>• Small job or cleanout</li>
-          <li>• Light furniture & bags</li>
-          <li>• Includes dump fee</li>
-        </ul>
-        <a href="#estimate" class="text-green-600 font-medium hover:underline">Request Estimate</a>
+      <div class="bg-white p-4 rounded-xl shadow text-center">
+        <h4 class="font-semibold mb-2">Furniture Removal</h4>
+        <img src="https://via.placeholder.com/300x200?text=Before" alt="Before Furniture" class="mx-auto mb-2 rounded">
+        <img src="https://via.placeholder.com/300x200?text=After" alt="After Furniture" class="mx-auto rounded">
       </div>
-      <div class="bg-white p-6 rounded-xl shadow text-center hover:shadow-lg transition">
-        <h4 class="text-xl font-semibold mb-2">½ Truck Load</h4>
-        <p class="text-2xl font-bold mb-2">$200–$350</p>
-        <ul class="text-sm text-gray-700 mb-4">
-          <li>• Medium cleanout</li>
-          <li>• Appliances, furniture</li>
-          <li>• Fast turnaround</li>
-        </ul>
-        <a href="#estimate" class="text-green-600 font-medium hover:underline">Request Estimate</a>
-      </div>
-      <div class="bg-white p-6 rounded-xl shadow text-center hover:shadow-lg transition">
-        <h4 class="text-xl font-semibold mb-2">Full Truck Load</h4>
-        <p class="text-2xl font-bold mb-2">$400–$600</p>
-        <ul class="text-sm text-gray-700 mb-4">
-          <li>• Full home/job cleanup</li>
-          <li>• Demolition debris</li>
-          <li>• Best value rate</li>
-        </ul>
-        <a href="#estimate" class="text-green-600 font-medium hover:underline">Request Estimate</a>
+      <div class="bg-white p-4 rounded-xl shadow text-center">
+        <h4 class="font-semibold mb-2">Yard Debris</h4>
+        <img src="https://via.placeholder.com/300x200?text=Before" alt="Before Yard" class="mx-auto mb-2 rounded">
+        <img src="https://via.placeholder.com/300x200?text=After" alt="After Yard" class="mx-auto rounded">
       </div>
     </div>
   </section>
 
   <section class="bg-gray-100 py-16 px-4 max-w-5xl mx-auto fade-in">
-    <h3 class="text-2xl font-bold mb-6 text-center">Leave Us a Review</h3>
-    <p class="text-center mb-4">Your feedback helps us grow. Submit your review below:</p>
-    <form id="reviewForm" action="mailto:junkbrosfl@gmail.com" method="POST" enctype="text/plain" onsubmit="event.preventDefault(); showSuccess('reviewForm');" class="max-w-lg mx-auto flex flex-col gap-4">
-      <input type="text" name="Name" placeholder="Your Name" required class="p-3 border border-gray-300 rounded-lg text-gray-900">
-      <input type="email" name="Email" placeholder="Your Email" required class="p-3 border border-gray-300 rounded-lg text-gray-900">
-      <select name="Rating" required class="p-3 border border-gray-300 rounded-lg text-gray-900">
-        <option value="">Rate Us (1-5 Stars)</option>
-        <option>⭐️</option>
-        <option>⭐️⭐️</option>
-        <option>⭐️⭐️⭐️</option>
-        <option>⭐️⭐️⭐️⭐️</option>
-        <option>⭐️⭐️⭐️⭐️⭐️</option>
-      </select>
-      <textarea name="Review" rows="4" placeholder="Write your review here..." required class="p-3 border border-gray-300 rounded-lg text-gray-900"></textarea>
-      <button type="submit" class="bg-green-600 hover:bg-green-700 text-white py-3 rounded-lg font-semibold text-lg">Submit Review</button>
-    </form>
+    <h3 class="text-2xl font-bold mb-6 text-center">Frequently Asked Questions</h3>
+    <div class="space-y-4 max-w-3xl mx-auto">
+      <details class="bg-white p-4 rounded-lg shadow">
+        <summary class="font-medium cursor-pointer">How soon can I schedule a pickup?</summary>
+        <p class="mt-2">We offer same-day or next-day service depending on availability. Call or request an estimate to book your spot!</p>
+      </details>
+      <details class="bg-white p-4 rounded-lg shadow">
+        <summary class="font-medium cursor-pointer">Do you handle heavy items?</summary>
+        <p class="mt-2">Absolutely. We safely remove heavy furniture, appliances, and even demolition debris.</p>
+      </details>
+      <details class="bg-white p-4 rounded-lg shadow">
+        <summary class="font-medium cursor-pointer">Are you licensed and insured?</summary>
+        <p class="mt-2">Yes, Junk Bros FL is fully licensed and insured for your peace of mind.</p>
+      </details>
+    </div>
   </section>
 
   <section id="estimate" class="bg-green-100 py-16 px-4 max-w-5xl mx-auto fade-in">
@@ -151,6 +128,7 @@
   <footer class="bg-green-600 text-white py-8 mt-12 text-center">
     <p class="text-sm">&copy; 2025 Junk Bros FL. All rights reserved.</p>
     <p class="text-sm mt-2">Call or Text: <a href="tel:7274202681" class="underline hover:text-yellow-300">727-420-2681</a><br>Email: <a href="mailto:junkbrosfl@gmail.com" class="underline hover:text-yellow-300">junkbrosfl@gmail.com</a></p>
+    <p class="text-sm mt-4"><a href="https://calendly.com/" target="_blank" class="underline hover:text-yellow-300">Book a Pickup Online</a></p>
   </footer>
 
 </body>
