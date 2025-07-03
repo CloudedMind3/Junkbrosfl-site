@@ -116,14 +116,21 @@
     </div>
   </section>
 
-  <!-- The remaining sections like How it Works, Review Form, FAQ, and Estimate Form stay unchanged, maintaining consistency with animations and styling. -->
+  <section id="estimate" class="bg-gray-100 py-16 px-4 max-w-5xl mx-auto fade-in">
+    <h3 class="text-2xl font-bold mb-6 text-center">Get a Free Estimate</h3>
+    <form id="estimateForm" action="mailto:junkbrosfl@gmail.com" method="POST" enctype="text/plain" onsubmit="event.preventDefault(); showSuccess('estimateForm');" class="max-w-lg mx-auto flex flex-col gap-4">
+      <input type="text" name="Name" placeholder="Your Name" required class="p-3 border border-gray-300 rounded-lg text-gray-900">
+      <input type="email" name="Email" placeholder="Your Email" required class="p-3 border border-gray-300 rounded-lg text-gray-900">
+      <input type="tel" name="Phone" placeholder="Your Phone Number" required class="p-3 border border-gray-300 rounded-lg text-gray-900">
+      <input type="text" name="City" placeholder="City" required class="p-3 border border-gray-300 rounded-lg text-gray-900">
+      <textarea name="Details" rows="4" placeholder="What do you need hauled?" required class="p-3 border border-gray-300 rounded-lg text-gray-900"></textarea>
+      <button type="submit" class="bg-green-600 hover:bg-green-700 text-white py-3 rounded-lg font-semibold text-lg">Request Estimate</button>
+    </form>
+  </section>
 
   <footer class="bg-green-600 text-white py-8 mt-12 text-center">
     <p class="text-sm">&copy; 2025 Junk Bros FL. All rights reserved.</p>
-    <p class="text-sm mt-2">
-      Call or Text: <a href="tel:7274202681" class="underline hover:text-yellow-300">727-420-2681</a><br>
-      Email: <a href="mailto:junkbrosfl@gmail.com" class="underline hover:text-yellow-300">junkbrosfl@gmail.com</a>
-    </p>
+    <p class="text-sm mt-2">Call or Text: <a href="tel:7274202681" class="underline hover:text-yellow-300">727-420-2681</a><br>Email: <a href="mailto:junkbrosfl@gmail.com" class="underline hover:text-yellow-300">junkbrosfl@gmail.com</a></p>
   </footer>
 
 </body>
