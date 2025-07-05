@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Light Demolition Services | Junk Bros FL</title>
+  <meta name="description" content="Light demolition services in Tampa Bay. Sheds, fences, small structures taken down safely and hauled away.">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    body { background: linear-gradient(to bottom, #f0f4f8, #ffffff); }
+    .btn-glow:hover { box-shadow: 0 0 15px rgba(34, 197, 94, 0.6); }
+  </style>
+</head>
+<body class="text-gray-900 font-sans">
+
+<header class="bg-green-600 text-white py-6 shadow-md">
+  <div class="max-w-6xl mx-auto px-4 flex justify-between items-center">
+    <h1 class="text-2xl font-bold">Junk Bros FL</h1>
+    <a href="index.html" class="bg-yellow-400 hover:bg-yellow-500 text-gray-900 px-4 py-2 rounded-xl font-medium btn-glow">Back to Home</a>
+  </div>
+</header>
+
+<section class="py-16 px-4 max-w-4xl mx-auto text-center">
+  <h2 class="text-4xl font-bold mb-4">Light Demolition Services</h2>
+  <p class="max-w-2xl mx-auto mb-6">We safely tear down sheds, fences, playsets, and small structures across Tampa Bay. All debris removed, no stress, just clean space.</p>
+  <div class="space-y-4">
+    <a href="tel:7274202681" class="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-xl text-lg btn-glow inline-block">Call Now to Book</a>
+    <a href="#estimate" class="bg-yellow-400 hover:bg-yellow-500 text-gray-900 px-6 py-3 rounded-xl text-lg btn-glow inline-block">Get Free Estimate</a>
+  </div>
+</section>
+
+<section id="estimate" class="bg-gray-100 py-16 px-4 max-w-3xl mx-auto">
+  <h3 class="text-2xl font-bold mb-6 text-center">Request an Estimate</h3>
+  <form id="estimateForm" action="mailto:junkbrosfl@gmail.com" method="POST" enctype="text/plain" onsubmit="event.preventDefault(); showSuccess();" class="flex flex-col gap-4">
+    <input type="text" name="Name" placeholder="Your Name" required class="p-3 border border-gray-300 rounded-lg text-gray-900">
+    <input type="email" name="Email" placeholder="Your Email" required class="p-3 border border-gray-300 rounded-lg text-gray-900">
+    <input type="tel" name="Phone" placeholder="Your Phone Number" required class="p-3 border border-gray-300 rounded-lg text-gray-900">
+    <input type="text" name="City" placeholder="City" required class="p-3 border border-gray-300 rounded-lg text-gray-900">
+    <textarea name="Details" rows="4" placeholder="What needs to be removed?" required class="p-3 border border-gray-300 rounded-lg text-gray-900"></textarea>
+    <button type="submit" class="bg-green-600 hover:bg-green-700 text-white py-3 rounded-lg font-semibold text-lg">Send Request</button>
+  </form>
+</section>
+
+<footer class="bg-green-600 text-white py-8 mt-12 text-center">
+  <p class="text-sm">&copy; 2025 Junk Bros FL. All rights reserved.</p>
+  <p class="text-sm mt-2">Call or Text: <a href="tel:7274202681" class="underline hover:text-yellow-300">727-420-2681</a> | Email: <a href="mailto:junkbrosfl@gmail.com" class="underline hover:text-yellow-300">junkbrosfl@gmail.com</a></p>
+</footer>
+
+<script>
+function showSuccess() {
+  document.getElementById('estimateForm').innerHTML = `<div class='bg-green-100 text-green-800 p-4 rounded-lg text-center'>Thank you! We'll be in touch shortly.</div>`;
+}
+</script>
+
+</body>
+</html>
