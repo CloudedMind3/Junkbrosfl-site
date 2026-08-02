@@ -1,160 +1,386 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Junk Bros FL - Fast, Affordable Junk Removal in Tampa Bay</title>
-  <meta name="description" content="Same-day junk removal serving Palm Harbor, Largo, St. Pete, and Tampa. Licensed & Insured. Call now for a free estimate.">
-  <meta name="keywords" content="Junk Removal Tampa Bay, Palm Harbor Junk Removal, Affordable Junk Removal, Same-Day Junk Removal, Licensed Junk Removal, Insured Junk Removal, Junk Bros FL, Tampa Junk Removal, St. Pete Junk Removal">
-  <meta name="author" content="Junk Bros FL">
-  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/809/809957.png" type="image/png">
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <style>
-    body {
-      scroll-behavior: smooth;
-      background: linear-gradient(to bottom, #f0f4f8, #ffffff);
-    }
-    .btn-glow:hover {
-      box-shadow: 0 0 15px rgba(34, 197, 94, 0.6);
-    }
-    .fade-in {
-      opacity: 0;
-      transform: translateY(20px);
-      animation: fadeInUp 0.8s ease forwards;
-    }
-    @keyframes fadeInUp {
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-    .sticky-call {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: #22c55e;
-      color: white;
-      padding: 12px 18px;
-      border-radius: 9999px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-      font-weight: 600;
-      z-index: 1000;
-    }
-    .sticky-call:hover {
-      background: #16a34a;
-    }
-    @media (max-width: 640px) {
-      .header-mobile-stack {
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
-      }
-    }
-  </style>
-  <script>
-    function showSuccess(id) {
-      const form = document.getElementById(id);
-      form.innerHTML = `<div class='bg-green-100 text-green-800 p-4 rounded-lg'>Thank you! Your submission has been received. We'll be in touch soon.</div>`;
-    }
-  </script>
-</head>
-<body class="bg-white text-gray-900 font-sans">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Junk Bros FL | Same-Day Junk Removal — Palm Harbor, Largo, St. Pete & Tampa</title>
+<meta name="description" content="Text us a photo of your junk, get a price back fast. Owner-operated junk removal & hauling serving Palm Harbor, Largo, Clearwater, St. Pete & Tampa. Licensed & insured. Same-day service.">
+<link rel="icon" type="image/png" href="business_logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Junk Bros FL LLC",
+  "description": "Owner-operated junk removal and hauling serving the greater Tampa Bay area. Same-day service, free photo quotes.",
+  "telephone": "+17272795180",
+  "email": "junkbrosfl@gmail.com",
+  "url": "https://junkbrosfl.com",
+  "areaServed": ["Palm Harbor FL","Largo FL","Clearwater FL","Tarpon Springs FL","Dunedin FL","St. Petersburg FL","Tampa FL"],
+  "address": { "@type": "PostalAddress", "addressLocality": "Palm Harbor", "addressRegion": "FL", "addressCountry": "US" },
+  "priceRange": "$$",
+  "openingHours": "Mo-Su 07:00-20:00"
+}
+</script>
+<style>
+  :root {
+    --ink: #101014;
+    --asphalt: #1a1a21;
+    --line: #2a2a33;
+    --orange: #f97316;
+    --orange-deep: #ea580c;
+    --cream: #f5efe6;
+    --cream-dim: #e8dfd0;
+    --green: #22c55e;
+    --muted: #8b8b96;
+    --mono: 'IBM Plex Mono', monospace;
+    --display: 'Bebas Neue', sans-serif;
+    --body: 'Barlow', sans-serif;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body { background: var(--ink); color: var(--cream); font-family: var(--body); font-size: 17px; line-height: 1.6; }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; }
 
-<header class="bg-green-600 text-white py-6 shadow-md">
-  <div class="max-w-6xl mx-auto px-4 flex justify-between items-center flex-wrap">
-    <h1 class="text-3xl font-bold">Junk Bros FL</h1>
-    <div class="space-x-4 hidden sm:flex">
-      <a href="#estimate" class="bg-yellow-400 hover:bg-yellow-500 text-gray-900 px-4 py-2 rounded-xl font-medium btn-glow">Get Estimate</a>
-      <a href="tel:7272795180" class="bg-white hover:bg-gray-100 text-green-700 px-4 py-2 rounded-xl font-medium">Call Now</a>
+  .wrap { max-width: 1040px; margin: 0 auto; padding: 0 20px; }
+  .eyebrow { font-family: var(--mono); font-size: 11px; letter-spacing: 0.35em; text-transform: uppercase; color: var(--orange); margin-bottom: 14px; }
+  .display { font-family: var(--display); line-height: 0.95; letter-spacing: 0.01em; }
+
+  /* ── TOP BAR ── */
+  #topbar { position: sticky; top: 0; z-index: 90; background: rgba(16,16,20,0.94); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); }
+  #topbar .wrap { display: flex; align-items: center; justify-content: space-between; padding-top: 12px; padding-bottom: 12px; }
+  .logo { font-family: var(--display); font-size: 26px; color: #fff; text-decoration: none; line-height: 1; }
+  .logo span { color: var(--orange); }
+  .topbar-cta { display: flex; gap: 10px; align-items: center; }
+  .btn { display: inline-block; text-decoration: none; font-family: var(--display); letter-spacing: 0.06em; text-align: center; border-radius: 10px; transition: transform 0.12s ease, background 0.15s; cursor: pointer; }
+  .btn:active { transform: scale(0.97); }
+  .btn-orange { background: var(--orange); color: #101014; padding: 12px 22px; font-size: 19px; }
+  .btn-orange:hover { background: var(--orange-deep); }
+  .btn-ghost { border: 1px solid var(--line); color: var(--cream); padding: 11px 18px; font-size: 17px; }
+  .btn-ghost:hover { border-color: var(--orange); color: var(--orange); }
+  .topbar-phone { font-family: var(--mono); font-size: 13px; color: var(--muted); text-decoration: none; display: none; }
+  @media (min-width: 720px) { .topbar-phone { display: block; } }
+
+  /* ── HERO ── */
+  #hero { padding: 84px 0 64px; position: relative; overflow: hidden; background:
+    radial-gradient(ellipse 80% 60% at 70% 0%, rgba(249,115,22,0.13) 0%, transparent 60%), var(--ink); }
+  #hero .wrap { position: relative; }
+  .hero-h1 { font-size: clamp(56px, 10vw, 118px); color: #fff; max-width: 900px; }
+  .hero-h1 em { font-style: normal; color: var(--orange); }
+  .hero-sub { font-size: 19px; color: var(--cream-dim); max-width: 560px; margin: 22px 0 30px; }
+  .hero-sub strong { color: #fff; }
+  .hero-ctas { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 34px; }
+  .btn-big { padding: 17px 30px; font-size: 24px; }
+  .hero-proof { display: flex; flex-wrap: wrap; gap: 10px 26px; font-family: var(--mono); font-size: 12px; color: var(--muted); letter-spacing: 0.06em; }
+  .hero-proof span::before { content: '✓ '; color: var(--green); }
+
+  /* ── PHOTO QUOTE STRIP (signature) ── */
+  #photoquote { background: var(--orange); color: #101014; }
+  #photoquote .wrap { display: flex; flex-wrap: wrap; align-items: center; gap: 18px 32px; padding-top: 30px; padding-bottom: 30px; }
+  .pq-step { display: flex; align-items: center; gap: 12px; font-weight: 600; font-size: 17px; }
+  .pq-num { font-family: var(--display); font-size: 34px; line-height: 1; border: 2px solid #101014; border-radius: 50%; width: 46px; height: 46px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; padding-top: 4px; }
+  .pq-arrow { font-size: 22px; opacity: 0.5; display: none; }
+  @media (min-width: 860px) { .pq-arrow { display: block; } }
+  .pq-cta { margin-left: auto; }
+  .btn-ink { background: #101014; color: var(--orange); padding: 14px 26px; font-size: 20px; }
+  .btn-ink:hover { background: #000; }
+
+  /* ── SECTIONS ── */
+  section { padding: 72px 0; }
+  .sec-h2 { font-size: clamp(38px, 6vw, 64px); color: #fff; margin-bottom: 12px; }
+  .sec-lead { color: var(--muted); max-width: 620px; margin-bottom: 42px; font-size: 17px; }
+
+  /* ── SERVICES ── */
+  .svc-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px; }
+  .svc { background: var(--asphalt); border: 1px solid var(--line); border-radius: 14px; padding: 26px 24px; transition: border-color 0.2s; }
+  .svc:hover { border-color: rgba(249,115,22,0.5); }
+  .svc-tag { font-family: var(--mono); font-size: 10px; letter-spacing: 0.25em; text-transform: uppercase; color: var(--orange); margin-bottom: 12px; }
+  .svc h3 { font-family: var(--display); font-size: 28px; color: #fff; margin-bottom: 8px; letter-spacing: 0.02em; }
+  .svc p { color: var(--muted); font-size: 15.5px; }
+  .svc ul { margin-top: 12px; padding-left: 0; list-style: none; }
+  .svc li { color: var(--cream-dim); font-size: 14.5px; padding: 4px 0; border-top: 1px dashed var(--line); }
+  .svc li::before { content: '→ '; color: var(--orange); font-family: var(--mono); }
+
+  /* ── HOW IT WORKS / TRUST ── */
+  #how { background: var(--cream); color: var(--ink); }
+  #how .sec-h2 { color: var(--ink); }
+  #how .eyebrow { color: var(--orange-deep); }
+  #how .sec-lead { color: #57534e; }
+  .how-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 26px; }
+  .how-step { border-top: 3px solid var(--ink); padding-top: 18px; }
+  .how-step .n { font-family: var(--display); font-size: 46px; color: var(--orange-deep); line-height: 1; }
+  .how-step h3 { font-family: var(--display); font-size: 26px; margin: 8px 0 6px; letter-spacing: 0.02em; }
+  .how-step p { font-size: 15.5px; color: #44403c; }
+
+  /* ── OWNER / ABOUT ── */
+  #about .wrap { display: grid; grid-template-columns: 1fr; gap: 40px; align-items: start; }
+  @media (min-width: 860px) { #about .wrap { grid-template-columns: 1.1fr 0.9fr; } }
+  .about-quote { font-family: var(--display); font-size: clamp(30px, 4.5vw, 44px); color: #fff; line-height: 1.05; border-left: 4px solid var(--orange); padding-left: 22px; margin-bottom: 20px; }
+  #about p { color: var(--cream-dim); margin-bottom: 16px; font-size: 16.5px; }
+  .about-facts { background: var(--asphalt); border: 1px solid var(--line); border-radius: 14px; padding: 26px; }
+  .fact { display: flex; justify-content: space-between; align-items: baseline; padding: 12px 0; border-bottom: 1px dashed var(--line); }
+  .fact:last-child { border-bottom: none; }
+  .fact .k { font-family: var(--mono); font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted); }
+  .fact .v { font-family: var(--display); font-size: 22px; color: var(--orange); }
+
+  /* ── AREAS ── */
+  .areas { display: flex; flex-wrap: wrap; gap: 10px; }
+  .area-chip { font-family: var(--mono); font-size: 13px; letter-spacing: 0.08em; border: 1px solid var(--line); border-radius: 999px; padding: 9px 18px; color: var(--cream-dim); }
+  .area-chip.hot { border-color: var(--orange); color: var(--orange); }
+
+  /* ── FAQ ── */
+  details { border: 1px solid var(--line); border-radius: 12px; margin-bottom: 10px; background: var(--asphalt); }
+  summary { cursor: pointer; padding: 18px 20px; font-weight: 600; font-size: 16.5px; color: #fff; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+  summary::-webkit-details-marker { display: none; }
+  summary::after { content: '+'; font-family: var(--display); font-size: 26px; color: var(--orange); }
+  details[open] summary::after { content: '–'; }
+  details p { padding: 0 20px 18px; color: var(--muted); font-size: 15.5px; }
+
+  /* ── FINAL CTA ── */
+  #final { background: linear-gradient(180deg, var(--ink) 0%, #17120c 100%); text-align: center; padding: 90px 0; }
+  #final .display { font-size: clamp(46px, 9vw, 96px); color: #fff; }
+  #final .display em { font-style: normal; color: var(--orange); }
+  #final p { color: var(--muted); margin: 18px 0 30px; }
+  .final-ctas { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+
+  /* ── FOOTER ── */
+  footer { border-top: 1px solid var(--line); padding: 34px 0 110px; }
+  footer .wrap { display: flex; flex-wrap: wrap; gap: 18px; justify-content: space-between; font-family: var(--mono); font-size: 12px; color: var(--muted); }
+  footer a { color: var(--cream-dim); text-decoration: none; }
+  footer a:hover { color: var(--orange); }
+
+  /* ── STICKY MOBILE BAR ── */
+  #stickybar { position: fixed; bottom: 0; left: 0; right: 0; z-index: 95; display: flex; gap: 1px; background: var(--line); border-top: 1px solid var(--line); }
+  #stickybar a { flex: 1; text-align: center; padding: 16px 8px 20px; font-family: var(--display); font-size: 20px; letter-spacing: 0.06em; text-decoration: none; }
+  .sb-call { background: var(--orange); color: #101014; }
+  .sb-text { background: var(--ink); color: var(--orange); }
+  @media (min-width: 860px) { #stickybar { display: none; } footer { padding-bottom: 34px; } }
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<nav id="topbar">
+  <div class="wrap">
+    <a class="logo" href="#">JUNK<span>BROS</span> FL</a>
+    <div class="topbar-cta">
+      <a class="topbar-phone" href="tel:7272795180">(727) 279-5180</a>
+      <a class="btn btn-ghost" href="sms:7272795180?body=Hi%20Junk%20Bros%2C%20here%27s%20a%20photo%20of%20what%20I%20need%20gone%3A">Text a Photo</a>
+      <a class="btn btn-orange" href="tel:7272795180">Call Now</a>
     </div>
-    <div class="header-mobile-stack w-full mt-4 sm:hidden">
-      <a href="#estimate" class="bg-yellow-400 hover:bg-yellow-500 text-gray-900 px-4 py-2 rounded-xl font-medium btn-glow block">Get Estimate</a>
-      <a href="tel:7272795180" class="bg-white hover:bg-gray-100 text-green-700 px-4 py-2 rounded-xl font-medium block">Call Now</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header id="hero">
+  <div class="wrap">
+    <div class="eyebrow">Palm Harbor · Largo · Clearwater · St. Pete · Tampa</div>
+    <h1 class="display hero-h1">Your junk's as good as <em>gone.</em></h1>
+    <p class="hero-sub"><strong>Text us a photo of the pile.</strong> We text back a real price — no salesman walk-through, no waiting on a callback. Same-day pickup across Tampa Bay.</p>
+    <div class="hero-ctas">
+      <a class="btn btn-orange btn-big" href="sms:7272795180?body=Hi%20Junk%20Bros%2C%20here%27s%20a%20photo%20of%20what%20I%20need%20gone%3A">📸 Text a Photo, Get a Price</a>
+      <a class="btn btn-ghost btn-big" href="tel:7272795180">Call (727) 279-5180</a>
+    </div>
+    <div class="hero-proof">
+      <span>Licensed &amp; insured</span>
+      <span>Owner-operated, not a franchise</span>
+      <span>Same-day service</span>
+      <span>Free quotes</span>
     </div>
   </div>
 </header>
 
-<section class="bg-gray-100 py-16 px-4 text-center fade-in">
-  <h2 class="text-4xl font-bold mb-4">Fast, Affordable Junk Removal in Tampa Bay</h2>
-  <p class="text-lg max-w-2xl mx-auto mb-6">Serving Palm Harbor, Largo, St. Pete, and Tampa. Locally owned and operated. Reliable same-day service and free quotes!</p>
-  <a href="#estimate" class="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-xl text-lg btn-glow">Get a Free Quote</a>
-</section>
-
-<section class="py-16 px-4 max-w-5xl mx-auto fade-in">
-  <h3 class="text-2xl font-bold mb-6 text-center">Our Services</h3>
-  <div class="grid md:grid-cols-3 gap-8">
-    <a href="service-residential.html" class="bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition flex flex-col h-full">
-      <h4 class="text-xl font-semibold mb-2">Residential Junk Removal</h4>
-      <p>Old furniture, appliances, yard debris, garage cleanouts – we handle it all with care and speed.</p>
-    </a>
-    <a href="service-commercial.html" class="bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition flex flex-col h-full">
-      <h4 class="text-xl font-semibold mb-2">Commercial Hauling</h4>
-      <p>Office cleanouts, storage units, retail spaces – we clear the space so you can get back to business.</p>
-    </a>
-    <a href="service-demolition.html" class="bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition flex flex-col h-full">
-      <h4 class="text-xl font-semibold mb-2">Light Demolition</h4>
-      <p>Sheds, fences, small structures – safely taken down and hauled away. No stress, just results.</p>
-    </a>
+<!-- PHOTO QUOTE STRIP -->
+<div id="photoquote">
+  <div class="wrap">
+    <div class="pq-step"><div class="pq-num">1</div> Snap a photo of your junk</div>
+    <div class="pq-arrow">→</div>
+    <div class="pq-step"><div class="pq-num">2</div> Text it to us</div>
+    <div class="pq-arrow">→</div>
+    <div class="pq-step"><div class="pq-num">3</div> Get a price &amp; a pickup time</div>
+    <a class="btn btn-ink pq-cta" href="sms:7272795180?body=Hi%20Junk%20Bros%2C%20here%27s%20a%20photo%20of%20what%20I%20need%20gone%3A">Start Now</a>
   </div>
-</section>
+</div>
 
-<section class="bg-white py-16 px-4 max-w-5xl mx-auto text-center fade-in">
-  <h3 class="text-2xl font-bold mb-6">Service Areas</h3>
-  <p class="text-lg max-w-xl mx-auto">We proudly serve <strong>Palm Harbor</strong>, <strong>Largo</strong>, <strong>St. Petersburg</strong>, <strong>Tampa</strong>, and <strong>surrounding areas</strong>. Whether you need a single item removed or a full property cleanout – we've got you covered.</p>
-</section>
-
-<section class="py-16 px-4 max-w-5xl mx-auto fade-in">
-  <div class="w-full h-72">
-    <iframe class="w-full h-full rounded-xl shadow" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d176185.49914919387!2d-82.7667!3d28.0000!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2f18f0b9e4b55%3A0x9f16e7cf08d97b0e!2sTampa%20Bay%20Area%2C%20FL!5e0!3m2!1sen!2sus!4v1719946004874!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  </div>
-</section>
-
-<section id="about" class="py-12 px-4 max-w-4xl mx-auto text-center">
-  <h2 class="text-3xl font-bold mb-4">About Us</h2>
-  <p class="text-lg leading-relaxed">At Junk Bros FL, we’re your fast, affordable junk removal solution serving Palm Harbor, Largo, St. Pete, and Tampa. We started this business with one goal — to make clearing out unwanted junk stress-free, same-day, and done right the first time. Whether you need help with residential cleanouts, commercial spaces, or construction debris, we’ve got your back. Licensed, insured, and ready to work — when you call Junk Bros, your junk's as good as gone.</p>
-</section>
-
-<section id="estimate" class="bg-green-100 py-16 px-4 max-w-5xl mx-auto fade-in">
-  <h3 class="text-2xl font-bold mb-6 text-center">Get a Free Estimate</h3>
-  <form id="estimateForm" action="mailto:junkbrosfl@gmail.com" method="POST" enctype="text/plain" onsubmit="event.preventDefault(); showSuccess('estimateForm');" class="max-w-lg mx-auto flex flex-col gap-4">
-    <input type="text" name="Name" placeholder="Your Name" required class="p-3 border border-gray-300 rounded-lg text-gray-900">
-    <input type="email" name="Email" placeholder="Your Email" required class="p-3 border border-gray-300 rounded-lg text-gray-900">
-    <input type="tel" name="Phone" placeholder="Your Phone Number" required class="p-3 border border-gray-300 rounded-lg text-gray-900">
-    <input type="text" name="City" placeholder="City" required class="p-3 border border-gray-300 rounded-lg text-gray-900">
-    <textarea name="Details" rows="4" placeholder="What do you need hauled?" required class="p-3 border border-gray-300 rounded-lg text-gray-900"></textarea>
-    <button type="submit" class="bg-green-600 hover:bg-green-700 text-white py-3 rounded-lg font-semibold text-lg">Request Estimate</button>
-  </form>
-</section>
-
-<section class="py-16 px-4 max-w-5xl mx-auto text-center fade-in">
-  <h3 class="text-2xl font-bold mb-6">What Our Customers Say</h3>
-  <div class="grid md:grid-cols-3 gap-8">
-    <div class="bg-white p-6 rounded-2xl shadow-md">
-      <p class="text-lg italic">"Fast, affordable, and reliable! Junk Bros cleared my garage the same day I called."</p>
-      <p class="mt-4 font-bold">- Mike D., Palm Harbor</p>
-    </div>
-    <div class="bg-white p-6 rounded-2xl shadow-md">
-      <p class="text-lg italic">"Highly recommend. Friendly team and excellent service."</p>
-      <p class="mt-4 font-bold">- Sarah P., St. Pete</p>
-    </div>
-    <div class="bg-white p-6 rounded-2xl shadow-md">
-      <p class="text-lg italic">"They showed up on time and handled everything quickly. Stress-free process."</p>
-      <p class="mt-4 font-bold">- James T., Tampa</p>
+<!-- SERVICES -->
+<section id="services">
+  <div class="wrap">
+    <div class="eyebrow">What We Haul</div>
+    <h2 class="display sec-h2">One crew. Every mess.</h2>
+    <p class="sec-lead">If it's heavy, bulky, gross, or just in the way — that's the job. One item or a whole property, we load it, haul it, and leave the space clean.</p>
+    <div class="svc-grid">
+      <div class="svc">
+        <div class="svc-tag">Residential</div>
+        <h3>Home &amp; Garage Cleanouts</h3>
+        <p>From a single couch to a garage you can't park in anymore.</p>
+        <ul>
+          <li>Furniture &amp; mattresses</li>
+          <li>Appliances &amp; hot tubs</li>
+          <li>Garage, attic &amp; shed cleanouts</li>
+          <li>Moving leftovers &amp; box hauls</li>
+        </ul>
+      </div>
+      <div class="svc">
+        <div class="svc-tag">Realtors &amp; Commercial</div>
+        <h3>Property &amp; Estate Cleanouts</h3>
+        <p>We work with realtors across Pinellas — fast turnarounds so listings hit the market on time.</p>
+        <ul>
+          <li>Full estate &amp; rental cleanouts</li>
+          <li>Office &amp; storage unit clear-outs</li>
+          <li>Pre-listing hauls for realtors</li>
+          <li>Punch-list &amp; handyman tasks</li>
+        </ul>
+      </div>
+      <div class="svc">
+        <div class="svc-tag">Outdoor &amp; Demo</div>
+        <h3>Yard Debris &amp; Light Demolition</h3>
+        <p>Storm mess, overgrowth, or that shed that should've come down years ago.</p>
+        <ul>
+          <li>Yard waste &amp; storm debris</li>
+          <li>Sheds, fences &amp; small structures</li>
+          <li>Construction debris hauls</li>
+          <li>Hauling &amp; dump runs</li>
+        </ul>
+      </div>
     </div>
   </div>
 </section>
 
-<a href="tel:7272795180" class="sticky-call">Call Now</a>
+<!-- HOW IT WORKS -->
+<section id="how">
+  <div class="wrap">
+    <div class="eyebrow">How It Works</div>
+    <h2 class="display sec-h2">No mystery pricing. No waiting around.</h2>
+    <p class="sec-lead">Most jobs get priced from a photo and done the same week — a lot of them the same day.</p>
+    <div class="how-grid">
+      <div class="how-step">
+        <div class="n">01</div>
+        <h3>Send a photo</h3>
+        <p>Text a picture of what needs to go to (727) 279-5180. That's it — no forms, no account.</p>
+      </div>
+      <div class="how-step">
+        <div class="n">02</div>
+        <h3>Get a straight price</h3>
+        <p>We quote flat rates, up front. The price we text is the price you pay — no "starting at" games.</p>
+      </div>
+      <div class="how-step">
+        <div class="n">03</div>
+        <h3>We load, you point</h3>
+        <p>Our crew does all the lifting, sweeps up after, and hauls everything off. You don't touch a thing.</p>
+      </div>
+      <div class="how-step">
+        <div class="n">04</div>
+        <h3>Gone means gone</h3>
+        <p>We dump, donate, or recycle responsibly — and your space is back.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-<footer class="bg-green-600 text-white py-8 mt-12 text-center">
-  <p class="text-sm">&copy; 2025 Junk Bros FL. All rights reserved.</p>
-  <p class="text-sm mt-2">Call or Text: <a href="tel:7272795180" class="underline hover:text-yellow-300">727-279-5180</a><br>Email: <a href="mailto:junkbrosfl@gmail.com" class="underline hover:text-yellow-300">junkbrosfl@gmail.com</a></p>
-  <p class="text-sm mt-4">
-    <a href="https://calendly.com/" target="_blank" class="underline hover:text-yellow-300">Book a Pickup Online</a>
-    &nbsp;|&nbsp;
-    <a href="https://goo.gl/maps/zctVXn3NZdR7u6Vj7" target="_blank" class="underline hover:text-yellow-300">View Us on Google Maps</a>
-  </p>
+<!-- ABOUT -->
+<section id="about">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow">Owner-Operated</div>
+      <div class="about-quote">"When you call Junk Bros, you're talking to the guy who shows up."</div>
+      <p>Junk Bros FL isn't a franchise or a call center. It's a local crew built from the ground up in Palm Harbor — started by an owner who left a management career, bet everything on doing this right, and still answers the phone himself.</p>
+      <p>That's why realtors and repeat customers across Pinellas keep our number saved: same-day turnarounds, straight prices, and a crew that treats your property like it matters. Because to us, it does.</p>
+    </div>
+    <div class="about-facts">
+      <div class="fact"><span class="k">Based In</span><span class="v">Palm Harbor</span></div>
+      <div class="fact"><span class="k">Founded</span><span class="v">2025</span></div>
+      <div class="fact"><span class="k">Licensed &amp; Insured</span><span class="v">Yes</span></div>
+      <div class="fact"><span class="k">Same-Day Service</span><span class="v">Yes</span></div>
+      <div class="fact"><span class="k">Free Quotes</span><span class="v">Always</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- AREAS -->
+<section id="areas">
+  <div class="wrap">
+    <div class="eyebrow">Service Area</div>
+    <h2 class="display sec-h2">All over Tampa Bay.</h2>
+    <p class="sec-lead">Home base is Palm Harbor — and we run the whole bay area daily.</p>
+    <div class="areas">
+      <span class="area-chip hot">Palm Harbor</span>
+      <span class="area-chip">Tarpon Springs</span>
+      <span class="area-chip">Dunedin</span>
+      <span class="area-chip">Clearwater</span>
+      <span class="area-chip">Largo</span>
+      <span class="area-chip">Safety Harbor</span>
+      <span class="area-chip">Oldsmar</span>
+      <span class="area-chip">St. Petersburg</span>
+      <span class="area-chip">Tampa</span>
+      <span class="area-chip">New Port Richey</span>
+      <span class="area-chip">+ Surrounding Areas</span>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="wrap">
+    <div class="eyebrow">Questions</div>
+    <h2 class="display sec-h2">Straight answers.</h2>
+    <details>
+      <summary>How much does junk removal cost?</summary>
+      <p>Every job is a flat rate based on what you've got and how much of it — which is why the photo quote works so well. Text a picture and you'll get a real number, not a range that doubles when we show up. Single items start affordable; full cleanouts are priced by volume and labor.</p>
+    </details>
+    <details>
+      <summary>Can you really come the same day?</summary>
+      <p>Most days, yes. We run Tampa Bay daily and keep room in the schedule for same-day calls. The earlier you text, the better the odds.</p>
+    </details>
+    <details>
+      <summary>What won't you take?</summary>
+      <p>We can't haul hazardous materials — wet paint, chemicals, asbestos, fuel. Pretty much everything else — furniture, appliances, hot tubs, electronics, yard debris, construction scrap — we take.</p>
+    </details>
+    <details>
+      <summary>Do I need to move anything before you arrive?</summary>
+      <p>Nope. Point at it and we handle the rest — stairs, tight corners, heavy stuff included. We bring the muscle and the equipment.</p>
+    </details>
+    <details>
+      <summary>Do you work with realtors and property managers?</summary>
+      <p>All the time — pre-listing cleanouts, estate clear-outs, punch-list work, and quick turnarounds between tenants. Realtors are some of our best repeat clients. Ask about recurring service.</p>
+    </details>
+    <details>
+      <summary>What happens to my stuff?</summary>
+      <p>Whatever's still got life in it gets donated or rehomed; the rest is disposed of properly. We'd rather see a good couch get a second home than a landfill.</p>
+    </details>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section id="final">
+  <div class="wrap">
+    <div class="eyebrow">Ready When You Are</div>
+    <div class="display">Point at it. <em>It's gone.</em></div>
+    <p>Free quotes · Same-day service · Licensed &amp; insured</p>
+    <div class="final-ctas">
+      <a class="btn btn-orange btn-big" href="sms:7272795180?body=Hi%20Junk%20Bros%2C%20here%27s%20a%20photo%20of%20what%20I%20need%20gone%3A">📸 Text a Photo</a>
+      <a class="btn btn-ghost btn-big" href="tel:7272795180">Call (727) 279-5180</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div>© 2026 Junk Bros FL LLC · Palm Harbor, Florida</div>
+    <div>
+      <a href="tel:7272795180">(727) 279-5180</a> ·
+      <a href="mailto:junkbrosfl@gmail.com">junkbrosfl@gmail.com</a>
+    </div>
+  </div>
 </footer>
+
+<!-- STICKY MOBILE BAR -->
+<div id="stickybar">
+  <a class="sb-call" href="tel:7272795180">📞 CALL NOW</a>
+  <a class="sb-text" href="sms:7272795180?body=Hi%20Junk%20Bros%2C%20here%27s%20a%20photo%20of%20what%20I%20need%20gone%3A">📸 TEXT A PHOTO</a>
+</div>
 
 </body>
 </html>
