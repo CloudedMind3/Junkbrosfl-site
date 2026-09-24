@@ -2,385 +2,1081 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Junk Bros FL | Same-Day Junk Removal — Palm Harbor, Largo, St. Pete & Tampa</title>
-<meta name="description" content="Text us a photo of your junk, get a price back fast. Owner-operated junk removal & hauling serving Palm Harbor, Largo, Clearwater, St. Pete & Tampa. Licensed & insured. Same-day service.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="apple-touch-icon" href="business_logo.png">
 <link rel="icon" type="image/png" href="business_logo.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "Junk Bros FL LLC",
-  "description": "Owner-operated junk removal and hauling serving the greater Tampa Bay area. Same-day service, free photo quotes.",
-  "telephone": "+17272795180",
-  "email": "junkbrosfl@gmail.com",
-  "url": "https://junkbrosfl.com",
-  "areaServed": ["Palm Harbor FL","Largo FL","Clearwater FL","Tarpon Springs FL","Dunedin FL","St. Petersburg FL","Tampa FL"],
-  "address": { "@type": "PostalAddress", "addressLocality": "Palm Harbor", "addressRegion": "FL", "addressCountry": "US" },
-  "priceRange": "$$",
-  "openingHours": "Mo-Su 07:00-20:00"
-}
-</script>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Crew OS">
+<title>Junk Bros FL — Crew OS</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
   :root {
-    --ink: #101014;
-    --asphalt: #1a1a21;
-    --line: #2a2a33;
+    --bg: #07070f;
+    --card: #0d0d1a;
+    --border: #16162a;
     --orange: #f97316;
-    --orange-deep: #ea580c;
-    --cream: #f5efe6;
-    --cream-dim: #e8dfd0;
+    --cyan: #22d3ee;
     --green: #22c55e;
-    --muted: #8b8b96;
-    --mono: 'IBM Plex Mono', monospace;
-    --display: 'Bebas Neue', sans-serif;
-    --body: 'Barlow', sans-serif;
+    --red: #ef4444;
+    --purple: #a78bfa;
+    --text: #e2e8f0;
+    --muted: #4b5563;
+    --dim: #1f2937;
   }
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  html { scroll-behavior: smooth; }
-  body { background: var(--ink); color: var(--cream); font-family: var(--body); font-size: 17px; line-height: 1.6; }
-  img { max-width: 100%; display: block; }
-  a { color: inherit; }
-
-  .wrap { max-width: 1040px; margin: 0 auto; padding: 0 20px; }
-  .eyebrow { font-family: var(--mono); font-size: 11px; letter-spacing: 0.35em; text-transform: uppercase; color: var(--orange); margin-bottom: 14px; }
-  .display { font-family: var(--display); line-height: 0.95; letter-spacing: 0.01em; }
-
-  /* ── TOP BAR ── */
-  #topbar { position: sticky; top: 0; z-index: 90; background: rgba(16,16,20,0.94); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); }
-  #topbar .wrap { display: flex; align-items: center; justify-content: space-between; padding-top: 12px; padding-bottom: 12px; }
-  .logo { font-family: var(--display); font-size: 26px; color: #fff; text-decoration: none; line-height: 1; }
-  .logo span { color: var(--orange); }
-  .topbar-cta { display: flex; gap: 10px; align-items: center; }
-  .btn { display: inline-block; text-decoration: none; font-family: var(--display); letter-spacing: 0.06em; text-align: center; border-radius: 10px; transition: transform 0.12s ease, background 0.15s; cursor: pointer; }
-  .btn:active { transform: scale(0.97); }
-  .btn-orange { background: var(--orange); color: #101014; padding: 12px 22px; font-size: 19px; }
-  .btn-orange:hover { background: var(--orange-deep); }
-  .btn-ghost { border: 1px solid var(--line); color: var(--cream); padding: 11px 18px; font-size: 17px; }
-  .btn-ghost:hover { border-color: var(--orange); color: var(--orange); }
-  .topbar-phone { font-family: var(--mono); font-size: 13px; color: var(--muted); text-decoration: none; display: none; }
-  @media (min-width: 720px) { .topbar-phone { display: block; } }
-
-  /* ── HERO ── */
-  #hero { padding: 84px 0 64px; position: relative; overflow: hidden; background:
-    radial-gradient(ellipse 80% 60% at 70% 0%, rgba(249,115,22,0.13) 0%, transparent 60%), var(--ink); }
-  #hero .wrap { position: relative; }
-  .hero-h1 { font-size: clamp(56px, 10vw, 118px); color: #fff; max-width: 900px; }
-  .hero-h1 em { font-style: normal; color: var(--orange); }
-  .hero-sub { font-size: 19px; color: var(--cream-dim); max-width: 560px; margin: 22px 0 30px; }
-  .hero-sub strong { color: #fff; }
-  .hero-ctas { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 34px; }
-  .btn-big { padding: 17px 30px; font-size: 24px; }
-  .hero-proof { display: flex; flex-wrap: wrap; gap: 10px 26px; font-family: var(--mono); font-size: 12px; color: var(--muted); letter-spacing: 0.06em; }
-  .hero-proof span::before { content: '✓ '; color: var(--green); }
-
-  /* ── PHOTO QUOTE STRIP (signature) ── */
-  #photoquote { background: var(--orange); color: #101014; }
-  #photoquote .wrap { display: flex; flex-wrap: wrap; align-items: center; gap: 18px 32px; padding-top: 30px; padding-bottom: 30px; }
-  .pq-step { display: flex; align-items: center; gap: 12px; font-weight: 600; font-size: 17px; }
-  .pq-num { font-family: var(--display); font-size: 34px; line-height: 1; border: 2px solid #101014; border-radius: 50%; width: 46px; height: 46px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; padding-top: 4px; }
-  .pq-arrow { font-size: 22px; opacity: 0.5; display: none; }
-  @media (min-width: 860px) { .pq-arrow { display: block; } }
-  .pq-cta { margin-left: auto; }
-  .btn-ink { background: #101014; color: var(--orange); padding: 14px 26px; font-size: 20px; }
-  .btn-ink:hover { background: #000; }
-
-  /* ── SECTIONS ── */
-  section { padding: 72px 0; }
-  .sec-h2 { font-size: clamp(38px, 6vw, 64px); color: #fff; margin-bottom: 12px; }
-  .sec-lead { color: var(--muted); max-width: 620px; margin-bottom: 42px; font-size: 17px; }
-
-  /* ── SERVICES ── */
-  .svc-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px; }
-  .svc { background: var(--asphalt); border: 1px solid var(--line); border-radius: 14px; padding: 26px 24px; transition: border-color 0.2s; }
-  .svc:hover { border-color: rgba(249,115,22,0.5); }
-  .svc-tag { font-family: var(--mono); font-size: 10px; letter-spacing: 0.25em; text-transform: uppercase; color: var(--orange); margin-bottom: 12px; }
-  .svc h3 { font-family: var(--display); font-size: 28px; color: #fff; margin-bottom: 8px; letter-spacing: 0.02em; }
-  .svc p { color: var(--muted); font-size: 15.5px; }
-  .svc ul { margin-top: 12px; padding-left: 0; list-style: none; }
-  .svc li { color: var(--cream-dim); font-size: 14.5px; padding: 4px 0; border-top: 1px dashed var(--line); }
-  .svc li::before { content: '→ '; color: var(--orange); font-family: var(--mono); }
-
-  /* ── HOW IT WORKS / TRUST ── */
-  #how { background: var(--cream); color: var(--ink); }
-  #how .sec-h2 { color: var(--ink); }
-  #how .eyebrow { color: var(--orange-deep); }
-  #how .sec-lead { color: #57534e; }
-  .how-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 26px; }
-  .how-step { border-top: 3px solid var(--ink); padding-top: 18px; }
-  .how-step .n { font-family: var(--display); font-size: 46px; color: var(--orange-deep); line-height: 1; }
-  .how-step h3 { font-family: var(--display); font-size: 26px; margin: 8px 0 6px; letter-spacing: 0.02em; }
-  .how-step p { font-size: 15.5px; color: #44403c; }
-
-  /* ── OWNER / ABOUT ── */
-  #about .wrap { display: grid; grid-template-columns: 1fr; gap: 40px; align-items: start; }
-  @media (min-width: 860px) { #about .wrap { grid-template-columns: 1.1fr 0.9fr; } }
-  .about-quote { font-family: var(--display); font-size: clamp(30px, 4.5vw, 44px); color: #fff; line-height: 1.05; border-left: 4px solid var(--orange); padding-left: 22px; margin-bottom: 20px; }
-  #about p { color: var(--cream-dim); margin-bottom: 16px; font-size: 16.5px; }
-  .about-facts { background: var(--asphalt); border: 1px solid var(--line); border-radius: 14px; padding: 26px; }
-  .fact { display: flex; justify-content: space-between; align-items: baseline; padding: 12px 0; border-bottom: 1px dashed var(--line); }
-  .fact:last-child { border-bottom: none; }
-  .fact .k { font-family: var(--mono); font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted); }
-  .fact .v { font-family: var(--display); font-size: 22px; color: var(--orange); }
-
-  /* ── AREAS ── */
-  .areas { display: flex; flex-wrap: wrap; gap: 10px; }
-  .area-chip { font-family: var(--mono); font-size: 13px; letter-spacing: 0.08em; border: 1px solid var(--line); border-radius: 999px; padding: 9px 18px; color: var(--cream-dim); }
-  .area-chip.hot { border-color: var(--orange); color: var(--orange); }
-
-  /* ── FAQ ── */
-  details { border: 1px solid var(--line); border-radius: 12px; margin-bottom: 10px; background: var(--asphalt); }
-  summary { cursor: pointer; padding: 18px 20px; font-weight: 600; font-size: 16.5px; color: #fff; list-style: none; display: flex; justify-content: space-between; align-items: center; }
-  summary::-webkit-details-marker { display: none; }
-  summary::after { content: '+'; font-family: var(--display); font-size: 26px; color: var(--orange); }
-  details[open] summary::after { content: '–'; }
-  details p { padding: 0 20px 18px; color: var(--muted); font-size: 15.5px; }
-
-  /* ── FINAL CTA ── */
-  #final { background: linear-gradient(180deg, var(--ink) 0%, #17120c 100%); text-align: center; padding: 90px 0; }
-  #final .display { font-size: clamp(46px, 9vw, 96px); color: #fff; }
-  #final .display em { font-style: normal; color: var(--orange); }
-  #final p { color: var(--muted); margin: 18px 0 30px; }
-  .final-ctas { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
-
-  /* ── FOOTER ── */
-  footer { border-top: 1px solid var(--line); padding: 34px 0 110px; }
-  footer .wrap { display: flex; flex-wrap: wrap; gap: 18px; justify-content: space-between; font-family: var(--mono); font-size: 12px; color: var(--muted); }
-  footer a { color: var(--cream-dim); text-decoration: none; }
-  footer a:hover { color: var(--orange); }
-
-  /* ── STICKY MOBILE BAR ── */
-  #stickybar { position: fixed; bottom: 0; left: 0; right: 0; z-index: 95; display: flex; gap: 1px; background: var(--line); border-top: 1px solid var(--line); }
-  #stickybar a { flex: 1; text-align: center; padding: 16px 8px 20px; font-family: var(--display); font-size: 20px; letter-spacing: 0.06em; text-decoration: none; }
-  .sb-call { background: var(--orange); color: #101014; }
-  .sb-text { background: var(--ink); color: var(--orange); }
-  @media (min-width: 860px) { #stickybar { display: none; } footer { padding-bottom: 34px; } }
+  * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+  body { background: var(--bg); color: var(--text); font-family: 'IBM Plex Mono', monospace; min-height: 100vh; overflow-x: hidden; }
+  #login-screen { min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 32px 24px; background: radial-gradient(ellipse at 50% 0%, #f9731608 0%, transparent 70%); }
+  .login-logo { text-align: center; margin-bottom: 48px; }
+  .login-logo .brand { font-family: 'Bebas Neue', sans-serif; font-size: 48px; color: #fff; letter-spacing: 0.05em; line-height: 1; }
+  .login-logo .sub { font-size: 10px; letter-spacing: 0.4em; color: var(--orange); margin-top: 4px; text-transform: uppercase; }
+  .login-logo .version { font-size: 9px; color: var(--muted); margin-top: 8px; letter-spacing: 0.2em; }
+  .login-divider { width: 60px; height: 2px; background: linear-gradient(90deg, var(--orange), var(--cyan)); margin: 16px auto; border-radius: 2px; }
+  .login-btn { width: 100%; max-width: 320px; padding: 20px 24px; border: 1px solid; border-radius: 14px; font-family: 'Bebas Neue', sans-serif; font-size: 22px; letter-spacing: 0.1em; cursor: pointer; transition: all 0.2s; margin-bottom: 12px; display: block; position: relative; overflow: hidden; }
+  .login-btn::before { content: ''; position: absolute; inset: 0; opacity: 0; transition: opacity 0.2s; }
+  .login-btn:active::before { opacity: 1; }
+  .login-btn-owner { border-color: var(--orange); color: var(--orange); background: rgba(249,115,22,0.08); }
+  .login-btn-owner::before { background: rgba(249,115,22,0.1); }
+  .login-btn-crew { border-color: var(--cyan); color: var(--cyan); background: rgba(34,211,238,0.08); }
+  .login-btn-crew::before { background: rgba(34,211,238,0.1); }
+  .login-btn .btn-role { font-size: 10px; letter-spacing: 0.3em; display: block; font-family: 'IBM Plex Mono', monospace; opacity: 0.6; margin-top: 2px; }
+  #setup-banner { background: rgba(249,115,22,0.1); border: 1px solid rgba(249,115,22,0.3); border-radius: 10px; padding: 12px 16px; margin: 0 16px 16px; font-size: 11px; color: var(--orange); line-height: 1.6; display: none; }
+  #header { background: var(--card); border-bottom: 1px solid var(--border); padding: 14px 16px; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 100; }
+  .header-name { font-family: 'Bebas Neue', sans-serif; font-size: 22px; color: #fff; line-height: 1; }
+  .header-brand { font-size: 9px; letter-spacing: 0.3em; text-transform: uppercase; margin-bottom: 2px; }
+  .header-right { display: flex; gap: 8px; align-items: center; }
+  .clock-btn { padding: 7px 12px; border-radius: 8px; border: 1px solid; font-family: 'IBM Plex Mono', monospace; font-size: 10px; font-weight: 700; letter-spacing: 0.08em; cursor: pointer; transition: all 0.15s; }
+  .clock-in { border-color: var(--green); color: var(--green); background: rgba(34,197,94,0.08); }
+  .clock-out { border-color: var(--red); color: var(--red); background: rgba(239,68,68,0.08); }
+  .switch-btn { padding: 7px 10px; border-radius: 8px; border: 1px solid var(--border); color: var(--muted); background: transparent; font-family: 'IBM Plex Mono', monospace; font-size: 10px; cursor: pointer; }
+  #app { display: none; padding-bottom: 80px; }
+  .page { display: none; padding: 16px; max-width: 520px; margin: 0 auto; }
+  .page.active { display: block; }
+  #bottom-nav { position: fixed; bottom: 0; left: 0; right: 0; background: var(--card); border-top: 1px solid var(--border); display: flex; padding: 10px 12px 16px; gap: 8px; z-index: 100; }
+  .nav-btn { flex: 1; padding: 10px 4px; border-radius: 10px; border: 1px solid; font-family: 'IBM Plex Mono', monospace; font-size: 9px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; cursor: pointer; transition: all 0.15s; }
+  .nav-btn.inactive { border-color: var(--border); color: var(--muted); background: transparent; }
+  .stat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 16px; }
+  .stat-card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 14px; }
+  .stat-label { font-size: 8px; color: var(--muted); letter-spacing: 0.25em; text-transform: uppercase; margin-bottom: 6px; }
+  .stat-value { font-family: 'Bebas Neue', sans-serif; font-size: 26px; line-height: 1; }
+  .stat-sub { font-size: 9px; color: var(--muted); margin-top: 4px; }
+  .section-label { font-size: 8px; color: var(--muted); letter-spacing: 0.3em; text-transform: uppercase; margin-bottom: 12px; }
+  .job-card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 14px; margin-bottom: 10px; cursor: pointer; transition: border-color 0.2s; }
+  .job-card:active { opacity: 0.8; }
+  .job-card.expanded { border-color: rgba(249,115,22,0.4); }
+  .job-top { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px; }
+  .job-title { font-family: 'Bebas Neue', sans-serif; font-size: 18px; color: #fff; line-height: 1.1; }
+  .job-amount { font-family: 'Bebas Neue', sans-serif; font-size: 20px; line-height: 1; }
+  .job-meta { font-size: 13px; color: var(--muted); margin-top: 6px; }
+  .tags { display: flex; gap: 6px; flex-wrap: wrap; margin: 6px 0; }
+  .tag { font-size: 9px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 2px 8px; border-radius: 4px; border: 1px solid; }
+  .job-expand { margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--border); display: none; }
+  .job-expand.open { display: block; }
+  .expand-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-bottom: 10px; }
+  .expand-cell { background: var(--bg); border-radius: 8px; padding: 8px; text-align: center; }
+  .expand-cell-label { font-size: 8px; color: var(--muted); letter-spacing: 0.1em; margin-bottom: 4px; }
+  .expand-cell-val { font-family: 'Bebas Neue', sans-serif; font-size: 17px; }
+  .job-note { font-size: 13px; color: var(--muted); font-style: italic; margin-top: 6px; }
+  .job-addr { font-size: 13px; color: var(--dim); margin-bottom: 4px; }
+  .primary-btn { width: 100%; padding: 15px; border: 1px solid; border-radius: 12px; font-family: 'Bebas Neue', sans-serif; font-size: 20px; letter-spacing: 0.1em; cursor: pointer; transition: all 0.15s; margin-bottom: 16px; }
+  .form-box { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 18px; margin-bottom: 16px; }
+  .form-box.accent-border { border-color: rgba(249,115,22,0.4); }
+  .form-title { font-size: 9px; letter-spacing: 0.25em; text-transform: uppercase; margin-bottom: 16px; }
+  .form-row { display: flex; gap: 10px; }
+  .form-group { margin-bottom: 12px; flex: 1; }
+  .form-label { font-size: 8px; color: var(--muted); letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 5px; display: block; }
+  .form-input { width: 100%; background: var(--bg); border: 1px solid var(--border); border-radius: 8px; padding: 10px 12px; color: var(--text); font-size: 13px; font-family: 'IBM Plex Mono', monospace; outline: none; transition: border-color 0.15s; }
+  .form-input:focus { border-color: var(--orange); }
+  select.form-input { cursor: pointer; }
+  .status-row { display: flex; gap: 8px; margin-bottom: 12px; }
+  .status-opt { flex: 1; padding: 9px 4px; border-radius: 8px; border: 1px solid var(--border); color: var(--muted); background: transparent; font-family: 'IBM Plex Mono', monospace; font-size: 9px; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; cursor: pointer; transition: all 0.15s; }
+  .repeat-check { display: flex; align-items: center; gap: 10px; cursor: pointer; margin-bottom: 12px; }
+  .repeat-check input { accent-color: var(--orange); width: 16px; height: 16px; }
+  .repeat-check span { font-size: 10px; color: var(--muted); letter-spacing: 0.1em; text-transform: uppercase; }
+  .pay-preview { background: rgba(34,211,238,0.08); border: 1px solid rgba(34,211,238,0.2); border-radius: 8px; padding: 10px 12px; margin-bottom: 12px; font-size: 11px; color: var(--cyan); }
+  .btn-row { display: flex; gap: 10px; }
+  .save-btn { flex: 1; padding: 13px; border: none; border-radius: 10px; font-family: 'Bebas Neue', sans-serif; font-size: 18px; letter-spacing: 0.1em; cursor: pointer; transition: all 0.15s; }
+  .cancel-btn { padding: 13px 16px; background: transparent; border: 1px solid var(--border); color: var(--muted); border-radius: 10px; cursor: pointer; font-family: 'IBM Plex Mono', monospace; font-size: 14px; }
+  .checklist-card { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 20px; }
+  .check-item { display: flex; align-items: center; gap: 14px; padding: 14px 0; border-bottom: 1px solid var(--border); cursor: pointer; transition: opacity 0.15s; }
+  .check-item:last-child { border-bottom: none; }
+  .check-box { width: 22px; height: 22px; border-radius: 6px; border: 2px solid var(--dim); display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 12px; transition: all 0.15s; }
+  .check-box.checked { background: var(--green); border-color: var(--green); }
+  .check-text { font-size: 13px; transition: all 0.15s; }
+  .check-text.done { color: var(--muted); text-decoration: line-through; }
+  .check-progress { text-align: center; padding-top: 14px; font-size: 10px; color: var(--muted); letter-spacing: 0.2em; }
+  .progress-bar { height: 4px; background: var(--border); border-radius: 4px; margin-top: 10px; overflow: hidden; }
+  .progress-fill { height: 100%; background: linear-gradient(90deg, var(--orange), var(--green)); border-radius: 4px; transition: width 0.3s; }
+  .type-bar { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 14px; margin-bottom: 8px; }
+  .type-bar-top { display: flex; justify-content: space-between; margin-bottom: 6px; }
+  .type-name { font-size: 12px; font-weight: 700; color: var(--text); }
+  .type-rev { font-family: 'Bebas Neue', sans-serif; font-size: 16px; color: var(--green); }
+  .type-track { height: 5px; background: var(--border); border-radius: 4px; overflow: hidden; margin-top: 8px; }
+  .type-fill { height: 100%; background: linear-gradient(90deg, var(--orange), var(--green)); border-radius: 4px; }
+  .sync-msg { font-size: 10px; padding: 8px 12px; border-radius: 8px; margin-bottom: 12px; text-align: center; letter-spacing: 0.1em; }
+  .sync-ok { background: rgba(34,197,94,0.1); color: var(--green); border: 1px solid rgba(34,197,94,0.2); }
+  .sync-err { background: rgba(239,68,68,0.1); color: var(--red); border: 1px solid rgba(239,68,68,0.2); }
+  .sync-pending { background: rgba(249,115,22,0.1); color: var(--orange); border: 1px solid rgba(249,115,22,0.2); }
+  .empty-state { text-align: center; padding: 48px 24px; color: var(--muted); font-size: 11px; letter-spacing: 0.15em; }
+  .pin-dot { width: 14px; height: 14px; border-radius: 50%; border: 2px solid #374151; background: transparent; transition: all 0.15s; }
+  .pin-dot.filled { background: #f97316; border-color: #f97316; }
+  .config-section { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 16px; margin-bottom: 12px; }
+  .config-title { font-size: 9px; color: var(--orange); letter-spacing: 0.25em; text-transform: uppercase; margin-bottom: 10px; }
+  .config-text { font-size: 11px; color: var(--muted); line-height: 1.7; margin-bottom: 10px; }
+  .config-text code { color: var(--cyan); background: rgba(34,211,238,0.1); padding: 1px 5px; border-radius: 3px; }
+  .pin-btn { padding: 18px; border-radius: 12px; border: 1px solid #16162a; background: #0d0d1a; color: #e2e8f0; font-family: 'Bebas Neue', sans-serif; font-size: 24px; cursor: pointer; }
+  .pin-btn-blank { padding: 18px; border-radius: 12px; border: 1px solid transparent; background: transparent; cursor: default; }
+  .clock-log-entry { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 14px; margin-bottom: 8px; }
+  .clock-log-user { font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 8px; font-weight: 700; }
+  .clock-log-row { display: flex; justify-content: space-between; align-items: center; font-size: 13px; color: var(--muted); margin-bottom: 4px; }
+  .clock-log-time { font-size: 13px; font-weight: 700; color: var(--text); }
+  .clock-log-duration { font-family: 'Bebas Neue', sans-serif; font-size: 20px; }
+  .clock-log-note { font-size: 12px; color: var(--muted); font-style: italic; margin-top: 6px; padding-top: 6px; border-top: 1px solid var(--border); }
+  .hours-summary-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 16px; }
+  .edit-form-box { background: rgba(249,115,22,0.05); border: 1px solid rgba(249,115,22,0.3); border-radius: 12px; padding: 16px; margin-top: 12px; }
+  .edit-form-title { font-size: 9px; color: var(--orange); letter-spacing: 0.25em; text-transform: uppercase; margin-bottom: 14px; }
+  .modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.7); z-index: 200; display: flex; align-items: center; justify-content: center; padding: 24px; }
+  .modal-box { background: var(--card); border: 1px solid rgba(239,68,68,0.4); border-radius: 16px; padding: 24px; width: 100%; max-width: 340px; }
+  .modal-title { font-family: 'Bebas Neue', sans-serif; font-size: 22px; color: var(--red); margin-bottom: 4px; }
+  .modal-sub { font-size: 11px; color: var(--muted); margin-bottom: 16px; letter-spacing: 0.1em; }
 </style>
 </head>
 <body>
 
-<!-- TOP BAR -->
-<nav id="topbar">
-  <div class="wrap">
-    <a class="logo" href="#">JUNK<span>BROS</span> FL</a>
-    <div class="topbar-cta">
-      <a class="topbar-phone" href="tel:7272795180">(727) 279-5180</a>
-      <a class="btn btn-ghost" href="sms:7272795180?body=Hi%20Junk%20Bros%2C%20here%27s%20a%20photo%20of%20what%20I%20need%20gone%3A">Text a Photo</a>
-      <a class="btn btn-orange" href="tel:7272795180">Call Now</a>
+<!-- CLOCK-OUT NOTE MODAL -->
+<div id="clockout-modal" class="modal-overlay" style="display:none">
+  <div class="modal-box">
+    <div class="modal-title">CLOCK OUT</div>
+    <div class="modal-sub">Add a note for this session? (optional)</div>
+    <div class="form-group">
+      <label class="form-label">Session Note</label>
+      <input class="form-input" id="clockout-note-input" placeholder="e.g. Sherry job, NPR cleanout..." style="font-size:14px">
     </div>
-  </div>
-</nav>
-
-<!-- HERO -->
-<header id="hero">
-  <div class="wrap">
-    <div class="eyebrow">Palm Harbor · Largo · Clearwater · St. Pete · Tampa</div>
-    <h1 class="display hero-h1">Your junk's as good as <em>gone.</em></h1>
-    <p class="hero-sub"><strong>Text us a photo of the pile.</strong> We text back a real price — no salesman walk-through, no waiting on a callback. Same-day pickup across Tampa Bay.</p>
-    <div class="hero-ctas">
-      <a class="btn btn-orange btn-big" href="sms:7272795180?body=Hi%20Junk%20Bros%2C%20here%27s%20a%20photo%20of%20what%20I%20need%20gone%3A">📸 Text a Photo, Get a Price</a>
-      <a class="btn btn-ghost btn-big" href="tel:7272795180">Call (727) 279-5180</a>
+    <div class="btn-row">
+      <button class="save-btn" style="background:#ef4444;color:#fff" onclick="confirmClockOut()">CLOCK OUT</button>
+      <button class="cancel-btn" onclick="document.getElementById('clockout-modal').style.display='none'">✕</button>
     </div>
-    <div class="hero-proof">
-      <span>Licensed &amp; insured</span>
-      <span>Owner-operated, not a franchise</span>
-      <span>Same-day service</span>
-      <span>Free quotes</span>
-    </div>
-  </div>
-</header>
-
-<!-- PHOTO QUOTE STRIP -->
-<div id="photoquote">
-  <div class="wrap">
-    <div class="pq-step"><div class="pq-num">1</div> Snap a photo of your junk</div>
-    <div class="pq-arrow">→</div>
-    <div class="pq-step"><div class="pq-num">2</div> Text it to us</div>
-    <div class="pq-arrow">→</div>
-    <div class="pq-step"><div class="pq-num">3</div> Get a price &amp; a pickup time</div>
-    <a class="btn btn-ink pq-cta" href="sms:7272795180?body=Hi%20Junk%20Bros%2C%20here%27s%20a%20photo%20of%20what%20I%20need%20gone%3A">Start Now</a>
   </div>
 </div>
 
-<!-- SERVICES -->
-<section id="services">
-  <div class="wrap">
-    <div class="eyebrow">What We Haul</div>
-    <h2 class="display sec-h2">One crew. Every mess.</h2>
-    <p class="sec-lead">If it's heavy, bulky, gross, or just in the way — that's the job. One item or a whole property, we load it, haul it, and leave the space clean.</p>
-    <div class="svc-grid">
-      <div class="svc">
-        <div class="svc-tag">Residential</div>
-        <h3>Home &amp; Garage Cleanouts</h3>
-        <p>From a single couch to a garage you can't park in anymore.</p>
-        <ul>
-          <li>Furniture &amp; mattresses</li>
-          <li>Appliances &amp; hot tubs</li>
-          <li>Garage, attic &amp; shed cleanouts</li>
-          <li>Moving leftovers &amp; box hauls</li>
-        </ul>
-      </div>
-      <div class="svc">
-        <div class="svc-tag">Realtors &amp; Commercial</div>
-        <h3>Property &amp; Estate Cleanouts</h3>
-        <p>We work with realtors across Pinellas — fast turnarounds so listings hit the market on time.</p>
-        <ul>
-          <li>Full estate &amp; rental cleanouts</li>
-          <li>Office &amp; storage unit clear-outs</li>
-          <li>Pre-listing hauls for realtors</li>
-          <li>Punch-list &amp; handyman tasks</li>
-        </ul>
-      </div>
-      <div class="svc">
-        <div class="svc-tag">Outdoor &amp; Demo</div>
-        <h3>Yard Debris &amp; Light Demolition</h3>
-        <p>Storm mess, overgrowth, or that shed that should've come down years ago.</p>
-        <ul>
-          <li>Yard waste &amp; storm debris</li>
-          <li>Sheds, fences &amp; small structures</li>
-          <li>Construction debris hauls</li>
-          <li>Hauling &amp; dump runs</li>
-        </ul>
-      </div>
-    </div>
+<!-- PIN SCREEN -->
+<div id="pin-screen" style="min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:32px 24px;background:radial-gradient(ellipse at 50% 0%,#f9731608 0%,transparent 70%)">
+  <div class="login-logo">
+    <div class="sub">Junk Bros FL LLC</div>
+    <div class="brand">CREW OS</div>
+    <div class="login-divider"></div>
+    <div class="version">v3.1 — Job Dates</div>
   </div>
-</section>
-
-<!-- HOW IT WORKS -->
-<section id="how">
-  <div class="wrap">
-    <div class="eyebrow">How It Works</div>
-    <h2 class="display sec-h2">No mystery pricing. No waiting around.</h2>
-    <p class="sec-lead">Most jobs get priced from a photo and done the same week — a lot of them the same day.</p>
-    <div class="how-grid">
-      <div class="how-step">
-        <div class="n">01</div>
-        <h3>Send a photo</h3>
-        <p>Text a picture of what needs to go to (727) 279-5180. That's it — no forms, no account.</p>
-      </div>
-      <div class="how-step">
-        <div class="n">02</div>
-        <h3>Get a straight price</h3>
-        <p>We quote flat rates, up front. The price we text is the price you pay — no "starting at" games.</p>
-      </div>
-      <div class="how-step">
-        <div class="n">03</div>
-        <h3>We load, you point</h3>
-        <p>Our crew does all the lifting, sweeps up after, and hauls everything off. You don't touch a thing.</p>
-      </div>
-      <div class="how-step">
-        <div class="n">04</div>
-        <h3>Gone means gone</h3>
-        <p>We dump, donate, or recycle responsibly — and your space is back.</p>
-      </div>
+  <div style="width:100%;max-width:300px">
+    <div style="font-size:9px;color:#4b5563;letter-spacing:0.3em;text-transform:uppercase;text-align:center;margin-bottom:16px">Enter PIN</div>
+    <div id="pin-dots" style="display:flex;justify-content:center;gap:12px;margin-bottom:24px">
+      <div class="pin-dot"></div><div class="pin-dot"></div><div class="pin-dot"></div><div class="pin-dot"></div>
     </div>
+    <div id="pin-error" style="display:none;text-align:center;font-size:11px;color:#ef4444;margin-bottom:12px;letter-spacing:0.1em">INCORRECT PIN</div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px" id="pin-pad"></div>
   </div>
-</section>
-
-<!-- ABOUT -->
-<section id="about">
-  <div class="wrap">
-    <div>
-      <div class="eyebrow">Owner-Operated</div>
-      <div class="about-quote">"When you call Junk Bros, you're talking to the guy who shows up."</div>
-      <p>Junk Bros FL isn't a franchise or a call center. It's a local crew built from the ground up in Palm Harbor — started by an owner who left a management career, bet everything on doing this right, and still answers the phone himself.</p>
-      <p>That's why realtors and repeat customers across Pinellas keep our number saved: same-day turnarounds, straight prices, and a crew that treats your property like it matters. Because to us, it does.</p>
-    </div>
-    <div class="about-facts">
-      <div class="fact"><span class="k">Based In</span><span class="v">Palm Harbor</span></div>
-      <div class="fact"><span class="k">Founded</span><span class="v">2025</span></div>
-      <div class="fact"><span class="k">Licensed &amp; Insured</span><span class="v">Yes</span></div>
-      <div class="fact"><span class="k">Same-Day Service</span><span class="v">Yes</span></div>
-      <div class="fact"><span class="k">Free Quotes</span><span class="v">Always</span></div>
-    </div>
-  </div>
-</section>
-
-<!-- AREAS -->
-<section id="areas">
-  <div class="wrap">
-    <div class="eyebrow">Service Area</div>
-    <h2 class="display sec-h2">All over Tampa Bay.</h2>
-    <p class="sec-lead">Home base is Palm Harbor — and we run the whole bay area daily.</p>
-    <div class="areas">
-      <span class="area-chip hot">Palm Harbor</span>
-      <span class="area-chip">Tarpon Springs</span>
-      <span class="area-chip">Dunedin</span>
-      <span class="area-chip">Clearwater</span>
-      <span class="area-chip">Largo</span>
-      <span class="area-chip">Safety Harbor</span>
-      <span class="area-chip">Oldsmar</span>
-      <span class="area-chip">St. Petersburg</span>
-      <span class="area-chip">Tampa</span>
-      <span class="area-chip">New Port Richey</span>
-      <span class="area-chip">+ Surrounding Areas</span>
-    </div>
-  </div>
-</section>
-
-<!-- FAQ -->
-<section id="faq">
-  <div class="wrap">
-    <div class="eyebrow">Questions</div>
-    <h2 class="display sec-h2">Straight answers.</h2>
-    <details>
-      <summary>How much does junk removal cost?</summary>
-      <p>Every job is a flat rate based on what you've got and how much of it — which is why the photo quote works so well. Text a picture and you'll get a real number, not a range that doubles when we show up. Single items start affordable; full cleanouts are priced by volume and labor.</p>
-    </details>
-    <details>
-      <summary>Can you really come the same day?</summary>
-      <p>Most days, yes. We run Tampa Bay daily and keep room in the schedule for same-day calls. The earlier you text, the better the odds.</p>
-    </details>
-    <details>
-      <summary>What won't you take?</summary>
-      <p>We can't haul hazardous materials — wet paint, chemicals, asbestos, fuel. Pretty much everything else — furniture, appliances, hot tubs, electronics, yard debris, construction scrap — we take.</p>
-    </details>
-    <details>
-      <summary>Do I need to move anything before you arrive?</summary>
-      <p>Nope. Point at it and we handle the rest — stairs, tight corners, heavy stuff included. We bring the muscle and the equipment.</p>
-    </details>
-    <details>
-      <summary>Do you work with realtors and property managers?</summary>
-      <p>All the time — pre-listing cleanouts, estate clear-outs, punch-list work, and quick turnarounds between tenants. Realtors are some of our best repeat clients. Ask about recurring service.</p>
-    </details>
-    <details>
-      <summary>What happens to my stuff?</summary>
-      <p>Whatever's still got life in it gets donated or rehomed; the rest is disposed of properly. We'd rather see a good couch get a second home than a landfill.</p>
-    </details>
-  </div>
-</section>
-
-<!-- FINAL CTA -->
-<section id="final">
-  <div class="wrap">
-    <div class="eyebrow">Ready When You Are</div>
-    <div class="display">Point at it. <em>It's gone.</em></div>
-    <p>Free quotes · Same-day service · Licensed &amp; insured</p>
-    <div class="final-ctas">
-      <a class="btn btn-orange btn-big" href="sms:7272795180?body=Hi%20Junk%20Bros%2C%20here%27s%20a%20photo%20of%20what%20I%20need%20gone%3A">📸 Text a Photo</a>
-      <a class="btn btn-ghost btn-big" href="tel:7272795180">Call (727) 279-5180</a>
-    </div>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer>
-  <div class="wrap">
-    <div>© 2026 Junk Bros FL LLC · Palm Harbor, Florida</div>
-    <div>
-      <a href="tel:7272795180">(727) 279-5180</a> ·
-      <a href="mailto:junkbrosfl@gmail.com">junkbrosfl@gmail.com</a>
-    </div>
-  </div>
-</footer>
-
-<!-- STICKY MOBILE BAR -->
-<div id="stickybar">
-  <a class="sb-call" href="tel:7272795180">📞 CALL NOW</a>
-  <a class="sb-text" href="sms:7272795180?body=Hi%20Junk%20Bros%2C%20here%27s%20a%20photo%20of%20what%20I%20need%20gone%3A">📸 TEXT A PHOTO</a>
 </div>
 
+<!-- LOGIN -->
+<div id="login-screen" style="display:none">
+  <div class="login-logo">
+    <div class="sub">Junk Bros FL LLC</div>
+    <div class="brand">CREW OS</div>
+    <div class="login-divider"></div>
+    <div class="version">v3.1 — Job Dates</div>
+  </div>
+  <button class="login-btn login-btn-owner" onclick="login('tyler')">
+    🔑 Tyler
+    <span class="btn-role">Owner · Full Access</span>
+  </button>
+  <button class="login-btn login-btn-crew" onclick="login('layne')">
+    🔧 Makana
+    <span class="btn-role">Crew Runner · Field Access</span>
+  </button>
+  <button class="login-btn login-btn-crew" onclick="login('jack')">
+    🔧 Jack
+    <span class="btn-role">Crew · Field Access</span>
+  </button>
+</div>
+
+<!-- APP -->
+<div id="app">
+  <div id="setup-banner">
+    ⚠️ SETUP NEEDED — Add your Google Sheet URL in Settings to enable data sync between devices.
+  </div>
+  <div id="header">
+    <div>
+      <div class="header-brand" id="header-brand">Junk Bros FL</div>
+      <div class="header-name" id="header-name">Tyler</div>
+    </div>
+    <div class="header-right">
+      <button class="clock-btn clock-in" id="clock-btn" onclick="toggleClock()">▶ CLOCK IN</button>
+      <button class="switch-btn" onclick="logout()">↩</button>
+    </div>
+  </div>
+  <div id="page-dashboard" class="page active"></div>
+  <div id="page-jobs" class="page"></div>
+  <div id="page-stats" class="page"></div>
+  <div id="page-pay" class="page"></div>
+  <div id="page-checklist" class="page"></div>
+  <div id="page-hours" class="page"></div>
+  <div id="page-settings" class="page"></div>
+  <div id="bottom-nav"></div>
+</div>
+
+<script>
+// ─── BUILD PIN PAD ────────────────────────────────────────────────────────────
+(function buildPinPad() {
+  var keys = [1,2,3,4,5,6,7,8,9,'',0,'⌫'];
+  var pad = document.getElementById('pin-pad');
+  keys.forEach(function(k) {
+    var btn = document.createElement('button');
+    if (k === '') {
+      btn.className = 'pin-btn-blank';
+      btn.disabled = true;
+    } else {
+      btn.className = 'pin-btn';
+      btn.textContent = k;
+      btn.addEventListener('click', function() { pinPress(String(k)); });
+    }
+    pad.appendChild(btn);
+  });
+})();
+
+// ─── PIN ─────────────────────────────────────────────────────────────────────
+var PINS = { '6400': 'tyler', '4200': 'layne', '1996': 'jack' };
+var pinEntry = '';
+
+function pinPress(key) {
+  if (key === '⌫') {
+    pinEntry = pinEntry.slice(0, -1);
+  } else if (pinEntry.length < 4) {
+    pinEntry += key;
+  }
+  updatePinDots();
+  if (pinEntry.length === 4) {
+    setTimeout(function() {
+      var user = PINS[pinEntry];
+      if (user) {
+        document.getElementById('pin-screen').style.display = 'none';
+        login(user);
+      } else {
+        document.getElementById('pin-error').style.display = 'block';
+        pinEntry = '';
+        updatePinDots();
+        setTimeout(function() { document.getElementById('pin-error').style.display = 'none'; }, 1500);
+      }
+    }, 150);
+  }
+}
+
+function updatePinDots() {
+  var dots = document.querySelectorAll('.pin-dot');
+  dots.forEach(function(d, i) { d.classList.toggle('filled', i < pinEntry.length); });
+}
+
+// ─── STATE ───────────────────────────────────────────────────────────────────
+var currentUser = null;
+var clockedIn = null;
+var expandedJob = null;
+var editingJobId = null;
+var editingClockIdx = null;
+var editClockData = {};
+var showForm = false;
+var currentPage = 'dashboard';
+var syncMsg = '';
+var checklistState = { trailer:false, fuel:false, straps:false, bags:false, gloves:false, spray:false };
+var SHEET_URL_DEFAULT = 'https://script.google.com/macros/s/AKfycbyGiY0XADLzgcm8X8VO_-rUUeW9W1vA_kDKIebT-StPl82zvsC7fVCofxQVnHvqXL11Fg/exec';
+var SECRET_KEY = localStorage.getItem('jb_key') || '';  // entered once per device in Settings — never commit it
+var lastSynced = localStorage.getItem('jb_last_synced') || null;
+var pendingSync = localStorage.getItem('jb_pending_sync') === 'true';
+var sheetUrl = localStorage.getItem('jb_sheet_url') || SHEET_URL_DEFAULT;
+var jobs = JSON.parse(localStorage.getItem('jb_jobs') || '[]');
+var clockLog = JSON.parse(localStorage.getItem('jb_clock_log') || '[]');
+var DATA_VERSION = '3.1';
+if (localStorage.getItem('jb_data_version') !== DATA_VERSION) {
+  jobs = []; pendingSync = false;
+  localStorage.removeItem('jb_jobs');
+  localStorage.setItem('jb_pending_sync', 'false');
+  localStorage.setItem('jb_data_version', DATA_VERSION);
+}
+var JOB_TYPES = ['Junk Removal','Hauling','Painting','Handyman','Moving','Yard Debris','Hot Tub/Appliance','Other'];
+var STATUSES = ['completed','in-progress','pending'];
+var formData = resetForm();
+var editData = {};
+
+function todayStr() {
+  var d = new Date();
+  return d.getFullYear() + '-' + String(d.getMonth()+1).padStart(2,'0') + '-' + String(d.getDate()).padStart(2,'0');
+}
+
+function isoToDateStr(iso) {
+  if (!iso) return todayStr();
+  var d = new Date(iso);
+  return d.getFullYear() + '-' + String(d.getMonth()+1).padStart(2,'0') + '-' + String(d.getDate()).padStart(2,'0');
+}
+
+function resetForm() {
+  return { title:'', customer:'', phone:'', address:'', type:'Junk Removal', revenue:'', quote:'', dumpFee:'', layneFlat:'', laynePercent:'', gas:'', mileage:'', status:'completed', notes:'', repeat:false, date: todayStr() };
+}
+
+// ─── UTILS ───────────────────────────────────────────────────────────────────
+var fmt = function(n) { return '$' + Number(n||0).toFixed(2); };
+var validDate = function(v) { if (!v || v === true || typeof v === 'number') return null; var d = new Date(v); return isNaN(d) ? null : d; };
+var fmtDate = function(iso) { var d = validDate(iso); return d ? d.toLocaleDateString([],{month:'short',day:'numeric'}) : '--'; };
+var fmtTime = function(iso) { return iso ? new Date(iso).toLocaleTimeString([],{hour:'2-digit',minute:'2-digit'}) : '--'; };
+var fmtDuration = function(startIso, endIso) {
+  var ms = new Date(endIso) - new Date(startIso);
+  if (ms < 0) return '--';
+  var hrs = Math.floor(ms / 3600000);
+  var mins = Math.floor((ms % 3600000) / 60000);
+  return hrs + 'h ' + mins + 'm';
+};
+var durationMs = function(startIso, endIso) {
+  var ms = new Date(endIso) - new Date(startIso);
+  return ms > 0 ? ms : 0;
+};
+var statusColor = function(s) { return s==='completed'?'#22c55e':s==='in-progress'?'#f97316':'#6b7280'; };
+var isOwner = function() { return currentUser === 'tyler'; };
+var ac = function() { return isOwner() ? '#f97316' : '#22d3ee'; };
+
+function getUserDisplayName(user) {
+  if (user === 'tyler') return 'Tyler';
+  if (user === 'layne') return 'Makana';
+  if (user === 'jack') return 'Jack';
+  return user;
+}
+
+function getUserColor(user) {
+  if (user === 'tyler') return '#f97316';
+  if (user === 'layne') return '#22d3ee';
+  if (user === 'jack') return '#a78bfa';
+  return '#22d3ee';
+}
+
+function localInputToISO(val) {
+  if (!val) return null;
+  return new Date(val).toISOString();
+}
+
+function isoToLocalInput(iso) {
+  if (!iso) return '';
+  var d = new Date(iso);
+  var pad = function(n) { return n < 10 ? '0' + n : n; };
+  return d.getFullYear() + '-' + pad(d.getMonth()+1) + '-' + pad(d.getDate()) + 'T' + pad(d.getHours()) + ':' + pad(d.getMinutes());
+}
+
+function saveJobs() {
+  localStorage.setItem('jb_jobs', JSON.stringify(jobs));
+  syncToSheet();
+}
+
+function saveClockLog() {
+  localStorage.setItem('jb_clock_log', JSON.stringify(clockLog));
+  syncClockToSheet();
+}
+
+// ─── HOURS STATS ─────────────────────────────────────────────────────────────
+function getHoursStats() {
+  var weekAgo = new Date(Date.now() - 7 * 86400000);
+  var users = ['tyler', 'layne', 'jack'];
+  var result = {};
+  users.forEach(function(u) {
+    var userLog = clockLog.filter(function(e) { return e.user === u; });
+    var weekLog = userLog.filter(function(e) { return new Date(e.clockIn) >= weekAgo; });
+    var totalMs = userLog.reduce(function(s, e) { return s + durationMs(e.clockIn, e.clockOut); }, 0);
+    var weekMs = weekLog.reduce(function(s, e) { return s + durationMs(e.clockIn, e.clockOut); }, 0);
+    result[u] = {
+      totalHrs: (totalMs / 3600000).toFixed(1),
+      weekHrs: (weekMs / 3600000).toFixed(1),
+      sessions: userLog.length
+    };
+  });
+  return result;
+}
+
+// ─── GOOGLE SHEETS SYNC ──────────────────────────────────────────────────────
+function normalizeJob(j) {
+  var num = function(v) { return parseFloat(v) || 0; };
+  return Object.assign({}, j, {
+    revenue: num(j.revenue), quote: num(j.quote), dumpFee: num(j.dumpFee),
+    laynePayDay: num(j.laynePayDay), mileage: num(j.mileage),
+    repeat: j.repeat === true || String(j.repeat).toUpperCase() === 'TRUE',
+    status: STATUSES.indexOf(j.status) > -1 ? j.status : '',
+    gas: j.gas == null ? '' : String(j.gas),
+    date: validDate(j.date) ? validDate(j.date).toISOString() : ''
+  });
+}
+
+function saveKey(val) {
+  SECRET_KEY = (val || '').trim();
+  localStorage.setItem('jb_key', SECRET_KEY);
+}
+async function syncToSheet() {
+  if (!sheetUrl || !SECRET_KEY) return;
+  try {
+    syncMsg = 'syncing';
+    render();
+    await fetch(sheetUrl, {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: { 'Content-Type': 'text/plain' },
+      body: JSON.stringify({ key: SECRET_KEY, action: 'saveJobs', jobs: jobs })
+    });
+    lastSynced = new Date().toISOString();
+    localStorage.setItem('jb_last_synced', lastSynced);
+    localStorage.setItem('jb_pending_sync', 'false');
+    pendingSync = false;
+    syncMsg = 'ok';
+    render();
+    setTimeout(function() { syncMsg = ''; render(); }, 3000);
+  } catch(e) {
+    localStorage.setItem('jb_pending_sync', 'true');
+    pendingSync = true;
+    syncMsg = 'error';
+    render();
+  }
+}
+
+async function syncClockToSheet() {
+  if (!sheetUrl || !SECRET_KEY) return;
+  try {
+    await fetch(sheetUrl, {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: { 'Content-Type': 'text/plain' },
+      body: JSON.stringify({ key: SECRET_KEY, action: 'saveClockLog', clockLog: clockLog })
+    });
+  } catch(e) {
+    localStorage.setItem('jb_pending_sync', 'true');
+    pendingSync = true;
+  }
+}
+
+async function fetchFromSheet() {
+  if (!sheetUrl || !SECRET_KEY) return;
+  // RETRY QUEUE: if a save failed earlier, push local data up FIRST so it doesn't get overwritten
+  if (pendingSync) {
+    await syncToSheet();
+    await syncClockToSheet();
+    return;
+  }
+  try {
+    var res = await fetch(sheetUrl + '?action=getJobs&key=' + encodeURIComponent(SECRET_KEY));
+    var data = await res.json();
+    if (data && data.error) { syncMsg = 'error'; render(); return; }
+    if (data && data.jobs && data.jobs.length > 0) {
+      jobs = data.jobs.map(normalizeJob);
+      localStorage.setItem('jb_jobs', JSON.stringify(jobs));
+    }
+    var res2 = await fetch(sheetUrl + '?action=getClockLog&key=' + encodeURIComponent(SECRET_KEY));
+    var data2 = await res2.json();
+    if (data2 && data2.clockLog && data2.clockLog.length > 0) {
+      clockLog = data2.clockLog;
+      localStorage.setItem('jb_clock_log', JSON.stringify(clockLog));
+    }
+    render();
+  } catch(e) {}
+}
+
+// ─── AUTH ─────────────────────────────────────────────────────────────────────
+function login(user) {
+  currentUser = user;
+  clockedIn = JSON.parse(localStorage.getItem('jb_clock_' + user) || 'null');
+  document.getElementById('login-screen').style.display = 'none';
+  document.getElementById('app').style.display = 'block';
+  if (!sheetUrl) document.getElementById('setup-banner').style.display = 'block';
+  currentPage = 'dashboard';
+  fetchFromSheet();
+  render();
+}
+
+function logout() {
+  currentUser = null;
+  pinEntry = '';
+  updatePinDots();
+  document.getElementById('pin-screen').style.display = 'flex';
+  document.getElementById('pin-screen').style.flexDirection = 'column';
+  document.getElementById('login-screen').style.display = 'none';
+  document.getElementById('app').style.display = 'none';
+  document.getElementById('setup-banner').style.display = 'none';
+}
+
+// ─── CLOCK ────────────────────────────────────────────────────────────────────
+function toggleClock() {
+  if (clockedIn) {
+    document.getElementById('clockout-note-input').value = '';
+    document.getElementById('clockout-modal').style.display = 'flex';
+  } else {
+    clockedIn = new Date().toISOString();
+    localStorage.setItem('jb_clock_' + currentUser, JSON.stringify(clockedIn));
+    render();
+  }
+}
+
+function confirmClockOut() {
+  var note = document.getElementById('clockout-note-input').value.trim();
+  var entry = {
+    user: currentUser,
+    clockIn: clockedIn,
+    clockOut: new Date().toISOString(),
+    note: note || ''
+  };
+  clockLog.unshift(entry);
+  saveClockLog();
+  clockedIn = null;
+  localStorage.removeItem('jb_clock_' + currentUser);
+  document.getElementById('clockout-modal').style.display = 'none';
+  render();
+}
+
+// ─── CLOCK LOG EDITING (Tyler only) ──────────────────────────────────────────
+function startEditClock(idx) {
+  if (!isOwner()) return;
+  editingClockIdx = idx;
+  var entry = clockLog[idx];
+  editClockData = {
+    clockIn: isoToLocalInput(entry.clockIn),
+    clockOut: isoToLocalInput(entry.clockOut),
+    note: entry.note || ''
+  };
+  render();
+}
+
+function cancelEditClock() {
+  editingClockIdx = null;
+  render();
+}
+
+function saveEditClock(idx) {
+  if (!isOwner()) return;
+  var inISO = localInputToISO(editClockData.clockIn);
+  var outISO = localInputToISO(editClockData.clockOut);
+  if (!inISO || !outISO) return;
+  clockLog[idx] = Object.assign({}, clockLog[idx], {
+    clockIn: inISO,
+    clockOut: outISO,
+    note: editClockData.note || ''
+  });
+  saveClockLog();
+  editingClockIdx = null;
+  render();
+}
+
+function deleteClockEntry(idx) {
+  if (!isOwner()) return;
+  if (!confirm('Delete this clock entry?')) return;
+  clockLog.splice(idx, 1);
+  saveClockLog();
+  editingClockIdx = null;
+  render();
+}
+
+// ─── NAV ──────────────────────────────────────────────────────────────────────
+function setPage(page) {
+  currentPage = page;
+  showForm = false;
+  editingJobId = null;
+  editingClockIdx = null;
+  render();
+}
+
+// ─── JOB ACTIONS ─────────────────────────────────────────────────────────────
+function toggleExpand(id) {
+  if (editingJobId === id) return;
+  expandedJob = expandedJob === id ? null : id;
+  render();
+}
+
+function startEdit(id) {
+  var job = jobs.find(function(j){return j.id===id;});
+  if (!job) return;
+  editingJobId = id;
+  expandedJob = id;
+  editData = {
+    title: job.title||'', customer: job.customer||'', phone: job.phone||'',
+    address: job.address||'', type: job.type||'Junk Removal',
+    revenue: job.revenue||'', quote: job.quote||'', dumpFee: job.dumpFee||'',
+    layneFlat: job.laynePayDay||'', laynePercent: '',
+    gas: job.gas||'', mileage: job.mileage||'',
+    status: job.status||'completed', notes: job.notes||'', repeat: job.repeat||false,
+    date: isoToDateStr(job.date)
+  };
+  render();
+}
+
+function cancelEdit() {
+  editingJobId = null;
+  render();
+}
+
+function saveEdit(id) {
+  var idx = jobs.findIndex(function(j){return j.id===id;});
+  if (idx === -1) return;
+  var layneAmt = editData.laynePercent
+    ? parseFloat(editData.revenue) * (parseFloat(editData.laynePercent)/100)
+    : parseFloat(editData.layneFlat||0);
+  jobs[idx] = Object.assign({}, jobs[idx], {
+    title: editData.title, customer: editData.customer, phone: editData.phone,
+    address: editData.address, type: editData.type,
+    revenue: parseFloat(editData.revenue||0), quote: parseFloat(editData.quote||editData.revenue||0),
+    dumpFee: parseFloat(editData.dumpFee||0), laynePayDay: layneAmt,
+    gas: editData.gas, mileage: parseFloat(editData.mileage||0),
+    status: editData.status, notes: editData.notes, repeat: editData.repeat,
+    date: (editData.date ? new Date(editData.date + 'T12:00:00').toISOString() : jobs[idx].date)
+  });
+  editingJobId = null;
+  saveJobs();
+  render();
+}
+
+function updateEdit(key, val) {
+  editData[key] = val;
+}
+
+function submitJob() {
+  if (!formData.title || !formData.revenue) return;
+  var layneAmt = formData.laynePercent
+    ? parseFloat(formData.revenue) * (parseFloat(formData.laynePercent)/100)
+    : parseFloat(formData.layneFlat||0);
+  jobs.unshift({
+    id: Date.now(),
+    title: formData.title, customer: formData.customer, phone: formData.phone,
+    address: formData.address, type: formData.type,
+    revenue: parseFloat(formData.revenue), quote: parseFloat(formData.quote||formData.revenue),
+    dumpFee: parseFloat(formData.dumpFee||0), laynePayDay: layneAmt,
+    gas: formData.gas,
+    mileage: parseFloat(formData.mileage||0), status: formData.status,
+    notes: formData.notes, repeat: formData.repeat,
+    date: (formData.date ? new Date(formData.date + 'T12:00:00').toISOString() : new Date().toISOString()), loggedBy: currentUser
+  });
+  formData = resetForm();
+  showForm = false;
+  saveJobs();
+  render();
+}
+
+function deleteJob(id) {
+  if (!confirm('Delete this job?')) return;
+  jobs = jobs.filter(function(j) { return j.id !== id; });
+  saveJobs();
+  render();
+}
+
+function toggleCheck(key) {
+  checklistState[key] = !checklistState[key];
+  render();
+}
+
+function updateForm(key, val) {
+  formData[key] = val;
+  if (key === 'revenue' || key === 'laynePercent') {
+    var preview = document.getElementById('layne-pay-preview');
+    if (preview) {
+      if (formData.laynePercent && formData.revenue) {
+        preview.style.display = 'block';
+        preview.textContent = 'Crew pay: ' + fmt(parseFloat(formData.revenue) * (parseFloat(formData.laynePercent) / 100));
+      } else {
+        preview.style.display = 'none';
+      }
+    }
+  }
+}
+
+function saveSheetUrl(val) {
+  sheetUrl = val;
+  localStorage.setItem('jb_sheet_url', val);
+  render();
+}
+
+// ─── STATS ────────────────────────────────────────────────────────────────────
+function getStats() {
+  var totalRev = jobs.reduce(function(s,j){return s+j.revenue;},0);
+  var totalDump = jobs.reduce(function(s,j){return s+(j.dumpFee||0);},0);
+  var totalPaid = jobs.reduce(function(s,j){return s+(j.laynePayDay||0);},0);
+  var profit = totalRev - totalDump - totalPaid;
+  var margin = totalRev ? ((profit/totalRev)*100).toFixed(0) : 0;
+  var todayStr = new Date().toDateString();
+  var today = jobs.filter(function(j){return new Date(j.date).toDateString()===todayStr;});
+  var weekAgo = new Date(Date.now()-7*86400000);
+  var weekJobs = jobs.filter(function(j){return new Date(j.date)>=weekAgo;});
+  var crewWeek = weekJobs.reduce(function(s,j){return s+(j.laynePayDay||0);},0);
+  var crewTotal = jobs.reduce(function(s,j){return s+(j.laynePayDay||0);},0);
+  // Per-user pay
+  var myWeekPay = weekJobs.filter(function(j){return j.loggedBy===currentUser;}).reduce(function(s,j){return s+(j.laynePayDay||0);},0);
+  var myTotalPay = jobs.filter(function(j){return j.loggedBy===currentUser;}).reduce(function(s,j){return s+(j.laynePayDay||0);},0);
+  return { totalRev:totalRev, totalDump:totalDump, totalPaid:totalPaid, profit:profit, margin:margin, today:today, weekJobs:weekJobs, crewWeek:crewWeek, crewTotal:crewTotal, myWeekPay:myWeekPay, myTotalPay:myTotalPay };
+}
+
+// ─── RENDER ───────────────────────────────────────────────────────────────────
+function render() {
+  if (!currentUser) return;
+  var s = getStats();
+  var color = ac();
+
+  document.getElementById('header-brand').style.color = color;
+  document.getElementById('header-name').textContent = getUserDisplayName(currentUser);
+  var cb = document.getElementById('clock-btn');
+  cb.textContent = clockedIn ? ('⏹ OUT ' + fmtTime(clockedIn)) : '▶ CLOCK IN';
+  cb.className = 'clock-btn ' + (clockedIn ? 'clock-out' : 'clock-in');
+
+  var navItems = isOwner()
+    ? ['dashboard','jobs','stats','checklist','hours','settings']
+    : ['dashboard','jobs','pay','checklist','hours'];
+  var nav = document.getElementById('bottom-nav');
+  nav.innerHTML = navItems.map(function(v) {
+    return '<button class="nav-btn ' + (v===currentPage?'':'inactive') + '" style="' + (v===currentPage?'border-color:'+color+';color:'+color+';background:'+color+'18':'') + '" onclick="setPage(\'' + v + '\')">' + v + '</button>';
+  }).join('');
+
+  ['dashboard','jobs','stats','pay','checklist','hours','settings'].forEach(function(p) {
+    var el = document.getElementById('page-' + p);
+    if (el) el.className = 'page' + (p===currentPage?' active':'');
+  });
+
+  renderDashboard(s, color);
+  renderJobs(s, color);
+  if (isOwner()) renderStats(s);
+  else renderPay(s);
+  renderChecklist();
+  renderHours(color);
+  if (isOwner()) renderSettings();
+}
+
+function syncBanner() {
+  var extra = lastSynced ? '<div style="font-size:9px;color:#4b5563;text-align:center;margin-bottom:8px;letter-spacing:0.1em">LAST SYNCED: ' + fmtTime(lastSynced) + ' · ' + fmtDate(lastSynced) + '</div>' : '';
+  if (pendingSync && !syncMsg) {
+    return extra + '<div class="sync-msg sync-err">⚠ UNSYNCED CHANGES — WILL RETRY ON NEXT OPEN</div>';
+  }
+  if (!syncMsg) return extra;
+  var map = { ok: ['sync-ok','✓ SYNCED'], error: ['sync-err','✕ SYNC FAILED — SAVED LOCALLY, WILL RETRY'], syncing: ['sync-pending','⟳ SYNCING...'] };
+  var arr = map[syncMsg] || ['',''];
+  return extra + '<div class="sync-msg ' + arr[0] + '">' + arr[1] + '</div>';
+}
+
+function renderDashboard(s, color) {
+  var el = document.getElementById('page-dashboard');
+  var dateStr = new Date().toLocaleDateString([],{weekday:'long',month:'long',day:'numeric'});
+  if (isOwner()) {
+    el.innerHTML = syncBanner() +
+      '<div class="section-label">' + dateStr + '</div>' +
+      '<div class="stat-grid">' +
+      '<div class="stat-card"><div class="stat-label">Net Profit</div><div class="stat-value" style="color:#22c55e">' + fmt(s.profit) + '</div><div class="stat-sub">' + s.margin + '% margin</div></div>' +
+      '<div class="stat-card"><div class="stat-label">Total Revenue</div><div class="stat-value" style="color:' + color + '">' + fmt(s.totalRev) + '</div><div class="stat-sub">' + jobs.length + ' jobs</div></div>' +
+      '<div class="stat-card"><div class="stat-label">Today Revenue</div><div class="stat-value" style="color:' + color + '">' + fmt(s.today.reduce(function(a,j){return a+j.revenue;},0)) + '</div><div class="stat-sub">' + s.today.length + ' jobs today</div></div>' +
+      '<div class="stat-card"><div class="stat-label">Crew Paid</div><div class="stat-value" style="color:#22d3ee">' + fmt(s.totalPaid) + '</div><div class="stat-sub">total</div></div>' +
+      '</div>' +
+      '<div class="section-label">Recent Jobs</div>' +
+      jobs.slice(0,3).map(function(j){return jobCard(j,color);}).join('');
+  } else {
+    el.innerHTML = syncBanner() +
+      '<div class="section-label">' + dateStr + '</div>' +
+      '<div class="stat-grid">' +
+      '<div class="stat-card"><div class="stat-label">This Week</div><div class="stat-value" style="color:' + color + '">' + fmt(s.myWeekPay) + '</div><div class="stat-sub">your pay</div></div>' +
+      '<div class="stat-card"><div class="stat-label">All Time</div><div class="stat-value" style="color:' + color + '">' + fmt(s.myTotalPay) + '</div><div class="stat-sub">total earned</div></div>' +
+      '<div class="stat-card"><div class="stat-label">Jobs Today</div><div class="stat-value" style="color:' + color + '">' + s.today.length + '</div></div>' +
+      '<div class="stat-card"><div class="stat-label">Status</div><div class="stat-value" style="color:' + (clockedIn?'#22c55e':'#374151') + '">' + (clockedIn?'ON':'OFF') + '</div><div class="stat-sub">' + (clockedIn?('since ' + fmtTime(clockedIn)):'') + '</div></div>' +
+      '</div>' +
+      '<div class="section-label">Recent Jobs</div>' +
+      jobs.slice(0,3).map(function(j){return jobCard(j,color);}).join('');
+  }
+}
+
+function editFormHtml(id, data, color) {
+  var laynePreview = (data.laynePercent && data.revenue) ? fmt(parseFloat(data.revenue)*(parseFloat(data.laynePercent)/100)) : '';
+  return '<div class="edit-form-box">' +
+    '<div class="edit-form-title">✏ Edit Job</div>' +
+    '<div class="form-group"><label class="form-label">Job Title</label><input class="form-input" value="' + (data.title||'') + '" oninput="editData.title=this.value" placeholder="Job title"></div>' +
+    '<div class="form-row"><div class="form-group"><label class="form-label">Customer</label><input class="form-input" value="' + (data.customer||'') + '" oninput="editData.customer=this.value"></div>' +
+    '<div class="form-group"><label class="form-label">Phone</label><input class="form-input" value="' + (data.phone||'') + '" oninput="editData.phone=this.value"></div></div>' +
+    '<div class="form-group"><label class="form-label">Address</label><input class="form-input" value="' + (data.address||'') + '" oninput="editData.address=this.value"></div>' +
+    '<div class="form-group"><label class="form-label">Job Type</label><select class="form-input" onchange="editData.type=this.value">' +
+    JOB_TYPES.map(function(t){return '<option '+(t===data.type?'selected':'')+'>'+t+'</option>';}).join('') +
+    '</select></div>' +
+    '<div class="form-group"><label class="form-label">Job Date</label><input class="form-input" type="date" value="' + (data.date||'') + '" oninput="editData.date=this.value"></div>' +
+    '<div class="form-row"><div class="form-group"><label class="form-label">Quoted $</label><input class="form-input" type="number" value="' + (data.quote||'') + '" oninput="editData.quote=this.value"></div>' +
+    '<div class="form-group"><label class="form-label">Actual $</label><input class="form-input" type="number" value="' + (data.revenue||'') + '" oninput="editData.revenue=this.value"></div></div>' +
+    '<div class="form-row"><div class="form-group"><label class="form-label">Dump Fee $</label><input class="form-input" type="number" value="' + (data.dumpFee||'') + '" oninput="editData.dumpFee=this.value"></div>' +
+    '<div class="form-group"><label class="form-label">Gas Used</label><input class="form-input" type="text" value="' + (data.gas||'') + '" oninput="editData.gas=this.value" placeholder="e.g. $30 or 8 gal"></div></div>' +
+    '<div class="form-row"><div class="form-group"><label class="form-label">Crew Pay $</label><input class="form-input" type="number" value="' + (data.layneFlat||'') + '" oninput="editData.layneFlat=this.value;editData.laynePercent=\'\'"></div>' +
+    '<div class="form-group"><label class="form-label">OR Crew %</label><input class="form-input" type="number" value="' + (data.laynePercent||'') + '" oninput="editData.laynePercent=this.value;editData.layneFlat=\'\'"></div></div>' +
+    (laynePreview ? '<div class="pay-preview">Crew pay: ' + laynePreview + '</div>' : '') +
+    '<div class="form-group"><label class="form-label">Mileage</label><input class="form-input" type="number" value="' + (data.mileage||'') + '" oninput="editData.mileage=this.value"></div>' +
+    '<div class="form-label" style="margin-bottom:8px">Status</div>' +
+    '<div class="status-row">' +
+    STATUSES.map(function(st){return '<button class="status-opt" style="'+(data.status===st?'border-color:'+statusColor(st)+';color:'+statusColor(st)+';background:'+statusColor(st)+'18':'')+'" onclick="editData.status=\''+st+'\';render()">'+st+'</button>';}).join('') +
+    '</div>' +
+    '<label class="repeat-check"><input type="checkbox" '+(data.repeat?'checked':'')+' onchange="editData.repeat=this.checked"><span>Repeat Customer</span></label>' +
+    '<div class="form-group"><label class="form-label">Notes</label><input class="form-input" value="' + (data.notes||'') + '" oninput="editData.notes=this.value"></div>' +
+    '<div class="btn-row">' +
+    '<button class="save-btn" style="background:' + color + ';color:#07070f" onclick="saveEdit(' + id + ')">SAVE CHANGES</button>' +
+    '<button class="cancel-btn" onclick="cancelEdit()">✕</button>' +
+    '</div></div>';
+}
+
+function jobCard(job, color) {
+  var exp = expandedJob === job.id;
+  var isEditing = editingJobId === job.id;
+  return '<div class="job-card ' + (exp?'expanded':'') + '" onclick="' + (isEditing?'':'toggleExpand('+job.id+')')+'">' +
+    '<div class="job-top"><div>' +
+    '<div class="job-title">' + job.title + '</div>' +
+    '<div class="tags">' +
+    '<span class="tag" style="color:'+color+';border-color:'+color+'40;background:'+color+'10">'+job.type+'</span>' +
+    (job.status ? '<span class="tag" style="color:'+statusColor(job.status)+';border-color:'+statusColor(job.status)+'40;background:'+statusColor(job.status)+'10">'+job.status+'</span>' : '') +
+    (job.repeat === true ? '<span class="tag" style="color:#a78bfa;border-color:#a78bfa40;background:#a78bfa10">REPEAT</span>' : '') +
+    '</div></div>' +
+    '<div class="job-amount" style="color:'+(isOwner()?'#22c55e':'#22d3ee')+'">'+(isOwner()?fmt(job.revenue):fmt(job.laynePayDay))+'</div>' +
+    '</div>' +
+    '<div class="job-meta">'+[job.customer||'—', fmtDate(job.date), (parseFloat(job.mileage)||0)+'mi', job.loggedBy?getUserDisplayName(job.loggedBy):''].filter(Boolean).join(' · ')+'</div>' +
+    '<div class="job-expand ' + (exp?'open':'') + '">' +
+    (job.address ? '<div class="job-addr">📍 ' + job.address + '</div>' : '') +
+    (job.phone ? '<div class="job-addr">📞 ' + job.phone + '</div>' : '') +
+    (job.gas ? '<div class="job-addr">⛽ Gas: ' + job.gas + '</div>' : '') +
+    (isOwner() ? '<div class="expand-grid">' +
+      '<div class="expand-cell"><div class="expand-cell-label">QUOTED</div><div class="expand-cell-val" style="color:#a78bfa">'+fmt(job.quote)+'</div></div>' +
+      '<div class="expand-cell"><div class="expand-cell-label">ACTUAL</div><div class="expand-cell-val" style="color:#f97316">'+fmt(job.revenue)+'</div></div>' +
+      '<div class="expand-cell"><div class="expand-cell-label">DUMP</div><div class="expand-cell-val" style="color:#ef4444">'+fmt(job.dumpFee)+'</div></div>' +
+      '<div class="expand-cell"><div class="expand-cell-label">NET</div><div class="expand-cell-val" style="color:#22c55e">'+fmt(job.revenue-(job.dumpFee||0)-job.laynePayDay)+'</div></div>' +
+      '</div>' : '') +
+    (job.notes ? '<div class="job-note">"' + job.notes + '"</div>' : '') +
+    (isEditing ? editFormHtml(job.id, editData, color) :
+      '<div class="btn-row" style="margin-top:10px">' +
+      '<button onclick="event.stopPropagation();startEdit('+job.id+')" style="flex:1;background:transparent;border:1px solid '+color+'40;color:'+color+';border-radius:6px;padding:7px 12px;font-size:11px;cursor:pointer;font-family:\'IBM Plex Mono\',monospace;letter-spacing:0.08em;font-weight:700">✏ EDIT</button>' +
+      (isOwner() ? '<button onclick="event.stopPropagation();deleteJob('+job.id+')" style="background:transparent;border:1px solid #ef444440;color:#ef4444;border-radius:6px;padding:7px 12px;font-size:11px;cursor:pointer;font-family:\'IBM Plex Mono\',monospace;letter-spacing:0.08em">DELETE</button>' : '') +
+      '</div>') +
+    '</div></div>';
+}
+
+function renderJobs(s, color) {
+  var el = document.getElementById('page-jobs');
+  var laynePreviewDisplay = (formData.laynePercent && formData.revenue) ? 'block' : 'none';
+  var laynePreviewAmt = (formData.laynePercent && formData.revenue) ? fmt(parseFloat(formData.revenue)*(parseFloat(formData.laynePercent)/100)) : '';
+  var html = '<button class="primary-btn" style="border-color:'+color+';color:'+color+';background:'+color+'10" onclick="showForm=!showForm;render()">'+(showForm?'✕ CANCEL':'+ LOG NEW JOB')+'</button>';
+  if (showForm) {
+    html += '<div class="form-box accent-border">' +
+      '<div class="form-title" style="color:'+color+'">New Job Entry</div>' +
+      '<div class="form-group"><label class="form-label">Job Title *</label><input class="form-input" value="'+formData.title+'" oninput="updateForm(\'title\',this.value)" placeholder="e.g. Hot tub removal"></div>' +
+      '<div class="form-row"><div class="form-group"><label class="form-label">Customer</label><input class="form-input" value="'+formData.customer+'" oninput="updateForm(\'customer\',this.value)" placeholder="Name"></div>' +
+      '<div class="form-group"><label class="form-label">Phone</label><input class="form-input" type="tel" value="'+formData.phone+'" oninput="updateForm(\'phone\',this.value)" placeholder="(727)..."></div></div>' +
+      '<div class="form-group"><label class="form-label">Address</label><input class="form-input" value="'+formData.address+'" oninput="updateForm(\'address\',this.value)" placeholder="Street, City"></div>' +
+      '<div class="form-group"><label class="form-label">Job Type</label><select class="form-input" onchange="updateForm(\'type\',this.value)">' +
+      JOB_TYPES.map(function(t){return '<option '+(t===formData.type?'selected':'')+'>'+t+'</option>';}).join('') +
+      '</select></div>' +
+      '<div class="form-group"><label class="form-label">Job Date</label><input class="form-input" type="date" value="'+formData.date+'" oninput="updateForm(\'date\',this.value)"></div>' +
+      '<div class="form-row"><div class="form-group"><label class="form-label">Quoted $</label><input class="form-input" type="number" value="'+formData.quote+'" oninput="updateForm(\'quote\',this.value)" placeholder="0.00"></div>' +
+      '<div class="form-group"><label class="form-label">Actual $ *</label><input class="form-input" type="number" value="'+formData.revenue+'" oninput="updateForm(\'revenue\',this.value)" placeholder="0.00"></div></div>' +
+      '<div class="form-row"><div class="form-group"><label class="form-label">Dump Fee $</label><input class="form-input" type="number" value="'+formData.dumpFee+'" oninput="updateForm(\'dumpFee\',this.value)" placeholder="35.00"></div>' +
+      '<div class="form-group"><label class="form-label">Gas Used</label><input class="form-input" type="text" value="'+formData.gas+'" oninput="updateForm(\'gas\',this.value)" placeholder="e.g. $30 or 8 gal"></div></div>' +
+      '<div class="form-row"><div class="form-group"><label class="form-label">Mileage</label><input class="form-input" type="number" value="'+formData.mileage+'" oninput="updateForm(\'mileage\',this.value)" placeholder="0"></div>' +
+      '<div class="form-group"><label class="form-label">Crew Pay $</label><input class="form-input" type="number" value="'+formData.layneFlat+'" oninput="updateForm(\'layneFlat\',this.value);updateForm(\'laynePercent\',\'\')" placeholder="0.00"></div></div>' +
+      '<div class="form-group"><label class="form-label">OR Crew %</label><input class="form-input" type="number" value="'+formData.laynePercent+'" oninput="updateForm(\'laynePercent\',this.value);updateForm(\'layneFlat\',\'\')" placeholder="e.g. 30"></div>' +
+      '<div id="layne-pay-preview" class="pay-preview" style="display:'+laynePreviewDisplay+'">Crew pay: '+laynePreviewAmt+'</div>' +
+      '<div class="form-label" style="margin-bottom:8px">Status</div>' +
+      '<div class="status-row">' +
+      STATUSES.map(function(st){return '<button class="status-opt" style="'+(formData.status===st?'border-color:'+statusColor(st)+';color:'+statusColor(st)+';background:'+statusColor(st)+'18':'')+'" onclick="updateForm(\'status\',\''+st+'\')">'+st+'</button>';}).join('') +
+      '</div>' +
+      '<label class="repeat-check"><input type="checkbox" '+(formData.repeat?'checked':'')+' onchange="updateForm(\'repeat\',this.checked)"><span>Repeat Customer</span></label>' +
+      '<div class="form-group"><label class="form-label">Notes</label><input class="form-input" value="'+formData.notes+'" oninput="updateForm(\'notes\',this.value)" placeholder="Any details..."></div>' +
+      '<div class="btn-row"><button class="save-btn" style="background:'+color+';color:#07070f" onclick="submitJob()">SAVE JOB</button>' +
+      '<button class="cancel-btn" onclick="showForm=false;render()">✕</button></div>' +
+      '</div>';
+  }
+  html += jobs.length===0 ? '<div class="empty-state">No jobs logged yet.</div>' : '';
+  html += jobs.map(function(j){return jobCard(j,color);}).join('');
+  el.innerHTML = html;
+}
+
+function renderStats(s) {
+  var el = document.getElementById('page-stats');
+  var maxRev = Math.max.apply(null, JOB_TYPES.map(function(t){return jobs.filter(function(j){return j.type===t;}).reduce(function(a,j){return a+j.revenue;},0);}));
+  maxRev = maxRev || 1;
+  var byType = JOB_TYPES.map(function(t){
+    return { t:t, rev:jobs.filter(function(j){return j.type===t;}).reduce(function(a,j){return a+j.revenue;},0), count:jobs.filter(function(j){return j.type===t;}).length };
+  }).filter(function(x){return x.count>0;}).sort(function(a,b){return b.rev-a.rev;});
+
+  el.innerHTML = '<div class="section-label">Business Overview</div>' +
+    '<div class="stat-grid">' +
+    '<div class="stat-card"><div class="stat-label">Total Revenue</div><div class="stat-value" style="color:#f97316">'+fmt(s.totalRev)+'</div></div>' +
+    '<div class="stat-card"><div class="stat-label">Net Profit</div><div class="stat-value" style="color:#22c55e">'+fmt(s.profit)+'</div><div class="stat-sub">'+s.margin+'% margin</div></div>' +
+    '<div class="stat-card"><div class="stat-label">Dump Fees</div><div class="stat-value" style="color:#ef4444">'+fmt(s.totalDump)+'</div></div>' +
+    '<div class="stat-card"><div class="stat-label">Paid Out</div><div class="stat-value" style="color:#22d3ee">'+fmt(s.totalPaid)+'</div></div>' +
+    '<div class="stat-card"><div class="stat-label">Total Jobs</div><div class="stat-value" style="color:#f97316">'+jobs.length+'</div></div>' +
+    '<div class="stat-card"><div class="stat-label">Avg Job</div><div class="stat-value" style="color:#a78bfa">'+fmt(jobs.length?s.totalRev/jobs.length:0)+'</div></div>' +
+    '<div class="stat-card"><div class="stat-label">Repeat Clients</div><div class="stat-value" style="color:#a78bfa">'+jobs.filter(function(j){return j.repeat===true;}).length+'</div></div>' +
+    '<div class="stat-card"><div class="stat-label">Completed</div><div class="stat-value" style="color:#22c55e">'+jobs.filter(function(j){return j.status==='completed';}).length+'</div></div>' +
+    '</div>' +
+    '<div class="section-label">Revenue by Job Type</div>' +
+    byType.map(function(x){
+      return '<div class="type-bar"><div class="type-bar-top"><div><div class="type-name">'+x.t+'</div><div class="tags" style="margin-top:4px">' +
+        '<span class="tag" style="color:#f97316;border-color:#f9731640;background:#f9731610">'+x.count+' job'+(x.count!==1?'s':'')+'</span>' +
+        '<span class="tag" style="color:#a78bfa;border-color:#a78bfa40;background:#a78bfa10">'+fmt(x.rev/x.count)+' avg</span>' +
+        '</div></div><div class="type-rev">'+fmt(x.rev)+'</div></div>' +
+        '<div class="type-track"><div class="type-fill" style="width:'+(x.rev/maxRev*100).toFixed(0)+'%"></div></div></div>';
+    }).join('') +
+    (byType.length===0 ? '<div class="empty-state">Log jobs to see stats.</div>' : '');
+}
+
+function renderPay(s) {
+  var el = document.getElementById('page-pay');
+  var myJobs = jobs.filter(function(j){ return j.loggedBy === currentUser; });
+  var myTotal = myJobs.reduce(function(a,j){return a+(j.laynePayDay||0);},0);
+  var weekAgo = new Date(Date.now()-7*86400000);
+  var myWeek = myJobs.filter(function(j){return new Date(j.date)>=weekAgo;}).reduce(function(a,j){return a+(j.laynePayDay||0);},0);
+
+  el.innerHTML = '<div class="section-label">Your Pay</div>' +
+    '<div class="stat-grid">' +
+    '<div class="stat-card"><div class="stat-label">This Week</div><div class="stat-value" style="color:#22d3ee">'+fmt(myWeek)+'</div></div>' +
+    '<div class="stat-card"><div class="stat-label">All Time</div><div class="stat-value" style="color:#22d3ee">'+fmt(myTotal)+'</div></div>' +
+    '</div>' +
+    '<div class="section-label">Pay History</div>' +
+    myJobs.map(function(j){
+      return '<div class="job-card" style="cursor:default"><div class="job-top"><div><div class="job-title">'+j.title+'</div><div class="job-meta">'+fmtDate(j.date)+' · '+(j.customer||'—')+'</div></div><div class="job-amount" style="color:#22d3ee">'+fmt(j.laynePayDay)+'</div></div></div>';
+    }).join('') +
+    (myJobs.length===0 ? '<div class="empty-state">No pay records yet.</div>' : '');
+}
+
+function renderChecklist() {
+  var el = document.getElementById('page-checklist');
+  var items = [
+    {key:'trailer',label:'🔗 Trailer hitched & secured'},
+    {key:'fuel',label:'⛽ Truck fueled up'},
+    {key:'straps',label:'🪢 Straps & tie downs loaded'},
+    {key:'bags',label:'🗑 Contractor bags loaded'},
+    {key:'gloves',label:'🧤 Gloves & PPE'},
+    {key:'spray',label:'🪳 Roach spray if needed'},
+  ];
+  var done = items.filter(function(i){return checklistState[i.key];}).length;
+  var pct = (done/items.length*100).toFixed(0);
+  el.innerHTML = '<div class="section-label">Pre-Job Checklist</div>' +
+    '<div class="checklist-card">' +
+    items.map(function(i){
+      return '<div class="check-item" onclick="toggleCheck(\''+i.key+'\')">' +
+        '<div class="check-box '+(checklistState[i.key]?'checked':'')+'">'+( checklistState[i.key]?'✓':'')+'</div>' +
+        '<div class="check-text '+(checklistState[i.key]?'done':'')+'">'+i.label+'</div>' +
+        '</div>';
+    }).join('') +
+    '<div class="check-progress">'+done+' / '+items.length+' COMPLETE' +
+    '<div class="progress-bar"><div class="progress-fill" style="width:'+pct+'%"></div></div></div>' +
+    '</div>' +
+    '<div style="margin-top:12px"><button onclick="checklistState={trailer:false,fuel:false,straps:false,bags:false,gloves:false,spray:false};render()" style="width:100%;background:transparent;border:1px solid #16162a;color:#4b5563;border-radius:10px;padding:12px;font-family:\'IBM Plex Mono\',monospace;font-size:11px;cursor:pointer;letter-spacing:0.1em">RESET CHECKLIST</button></div>';
+}
+
+function renderHours(color) {
+  var el = document.getElementById('page-hours');
+  if (!el) return;
+
+  var hs = getHoursStats();
+
+  var summaryHtml = '';
+  if (isOwner()) {
+    summaryHtml = '<div class="section-label">Hours Summary</div>' +
+      '<div class="hours-summary-grid">' +
+      '<div class="stat-card"><div class="stat-label" style="color:#f97316">Tyler · This Week</div><div class="stat-value" style="color:#f97316">'+hs.tyler.weekHrs+'h</div><div class="stat-sub">'+hs.tyler.sessions+' sessions total</div></div>' +
+      '<div class="stat-card"><div class="stat-label" style="color:#22d3ee">Makana · This Week</div><div class="stat-value" style="color:#22d3ee">'+hs.layne.weekHrs+'h</div><div class="stat-sub">'+hs.layne.sessions+' sessions total</div></div>' +
+      '<div class="stat-card"><div class="stat-label" style="color:#a78bfa">Jack · This Week</div><div class="stat-value" style="color:#a78bfa">'+hs.jack.weekHrs+'h</div><div class="stat-sub">'+hs.jack.sessions+' sessions total</div></div>' +
+      '<div class="stat-card"><div class="stat-label" style="color:#f97316">Tyler · All Time</div><div class="stat-value" style="color:#f97316">'+hs.tyler.totalHrs+'h</div></div>' +
+      '<div class="stat-card"><div class="stat-label" style="color:#22d3ee">Makana · All Time</div><div class="stat-value" style="color:#22d3ee">'+hs.layne.totalHrs+'h</div></div>' +
+      '<div class="stat-card"><div class="stat-label" style="color:#a78bfa">Jack · All Time</div><div class="stat-value" style="color:#a78bfa">'+hs.jack.totalHrs+'h</div></div>' +
+      '</div>';
+  } else {
+    var myHs = hs[currentUser] || { weekHrs:'0.0', totalHrs:'0.0', sessions:0 };
+    summaryHtml = '<div class="section-label">Your Hours</div>' +
+      '<div class="hours-summary-grid">' +
+      '<div class="stat-card"><div class="stat-label">This Week</div><div class="stat-value" style="color:'+color+'">'+myHs.weekHrs+'h</div></div>' +
+      '<div class="stat-card"><div class="stat-label">All Time</div><div class="stat-value" style="color:'+color+'">'+myHs.totalHrs+'h</div><div class="stat-sub">'+myHs.sessions+' sessions</div></div>' +
+      '</div>';
+  }
+
+  var currentSession = '';
+  if (clockedIn) {
+    var now = new Date();
+    var ms = now - new Date(clockedIn);
+    var hrs = Math.floor(ms/3600000);
+    var mins = Math.floor((ms%3600000)/60000);
+    currentSession = '<div class="clock-log-entry" style="border-color:rgba(34,197,94,0.4)">' +
+      '<div class="clock-log-user" style="color:#22c55e">● ' + getUserDisplayName(currentUser).toUpperCase() + ' — CLOCKED IN</div>' +
+      '<div class="clock-log-row"><span>In:</span><span class="clock-log-time" style="color:#22c55e">' + fmtTime(clockedIn) + ' · ' + fmtDate(clockedIn) + '</span></div>' +
+      '<div class="clock-log-row"><span>Duration so far:</span><span class="clock-log-duration" style="color:#22c55e">' + hrs + 'h ' + mins + 'm</span></div>' +
+      '</div>';
+  }
+
+  var log = isOwner() ? clockLog : clockLog.filter(function(e){return e.user===currentUser;});
+
+  var logHtml = '';
+  if (log.length === 0) {
+    logHtml = '<div class="empty-state">No clock-in history yet.</div>';
+  } else {
+    logHtml = log.map(function(entry) {
+      var realIdx = clockLog.indexOf(entry);
+      var userColor = getUserColor(entry.user);
+      var isEditingThis = editingClockIdx === realIdx;
+
+      if (isEditingThis && isOwner()) {
+        return '<div class="clock-log-entry" style="border-color:rgba(249,115,22,0.4)">' +
+          '<div class="clock-log-user" style="color:#f97316">✏ EDIT ENTRY — ' + (entry.user||'').toUpperCase() + '</div>' +
+          '<div class="form-group" style="margin-bottom:10px"><label class="form-label">Clock In Time</label>' +
+          '<input class="form-input" type="datetime-local" value="' + isoToLocalInput(entry.clockIn) + '" oninput="editClockData.clockIn=this.value" style="font-size:13px"></div>' +
+          '<div class="form-group" style="margin-bottom:10px"><label class="form-label">Clock Out Time</label>' +
+          '<input class="form-input" type="datetime-local" value="' + isoToLocalInput(entry.clockOut) + '" oninput="editClockData.clockOut=this.value" style="font-size:13px"></div>' +
+          '<div class="form-group" style="margin-bottom:12px"><label class="form-label">Session Note</label>' +
+          '<input class="form-input" value="' + (editClockData.note||'') + '" oninput="editClockData.note=this.value" placeholder="e.g. Sherry job" style="font-size:13px"></div>' +
+          '<div class="btn-row">' +
+          '<button class="save-btn" style="background:#f97316;color:#07070f" onclick="saveEditClock(' + realIdx + ')">SAVE</button>' +
+          '<button onclick="deleteClockEntry('+realIdx+')" style="background:transparent;border:1px solid #ef444440;color:#ef4444;border-radius:10px;padding:13px 16px;cursor:pointer;font-family:\'IBM Plex Mono\',monospace;font-size:11px">DELETE</button>' +
+          '<button class="cancel-btn" onclick="cancelEditClock()">✕</button>' +
+          '</div></div>';
+      }
+
+      return '<div class="clock-log-entry">' +
+        '<div class="clock-log-user" style="color:'+userColor+'">' + getUserDisplayName(entry.user).toUpperCase() + '</div>' +
+        '<div class="clock-log-row"><span>In:</span><span class="clock-log-time">' + fmtTime(entry.clockIn) + ' · ' + fmtDate(entry.clockIn) + '</span></div>' +
+        '<div class="clock-log-row"><span>Out:</span><span class="clock-log-time">' + fmtTime(entry.clockOut) + ' · ' + fmtDate(entry.clockOut) + '</span></div>' +
+        '<div class="clock-log-row" style="margin-top:6px"><span>Total:</span><span class="clock-log-duration" style="color:'+userColor+'">' + fmtDuration(entry.clockIn, entry.clockOut) + '</span></div>' +
+        (entry.note ? '<div class="clock-log-note">📝 ' + entry.note + '</div>' : '') +
+        (isOwner() ? '<button onclick="startEditClock('+realIdx+')" style="margin-top:10px;background:transparent;border:1px solid #f9731640;color:#f97316;border-radius:6px;padding:6px 12px;font-size:11px;cursor:pointer;font-family:\'IBM Plex Mono\',monospace;letter-spacing:0.08em;font-weight:700;width:100%">✏ EDIT ENTRY</button>' : '') +
+        '</div>';
+    }).join('');
+  }
+
+  el.innerHTML = summaryHtml +
+    (clockedIn ? '<div class="section-label" style="margin-top:4px">Active Session</div>' + currentSession : '') +
+    '<div class="section-label" style="margin-top:8px">Past Sessions</div>' +
+    logHtml;
+}
+
+function renderSettings() {
+  var el = document.getElementById('page-settings');
+  el.innerHTML = '<div class="section-label">Settings</div>' +
+    '<div class="config-section">' +
+    '<div class="config-title">Google Sheets Sync</div>' +
+    '<div class="config-text">Paste your Google Apps Script web app URL below to sync jobs between devices.</div>' +
+    '<div class="form-group"><label class="form-label">Google Apps Script URL</label>' +
+    '<input class="form-input" value="'+sheetUrl+'" oninput="saveSheetUrl(this.value)" placeholder="https://script.google.com/macros/s/..."></div>' +
+    '<div class="form-group"><label class="form-label">Sync Key</label>' +
+    '<input class="form-input" type="password" value="'+SECRET_KEY+'" oninput="saveKey(this.value)" placeholder="Ask Tyler for the key"></div>' +
+    (SECRET_KEY ? '' : '<div class="config-text" style="color:#ef4444">No sync key on this device — jobs will not sync until you enter it.</div>') +
+    '<button onclick="fetchFromSheet()" style="width:100%;background:transparent;border:1px solid #f9731640;color:#f97316;border-radius:10px;padding:12px;font-family:\'IBM Plex Mono\',monospace;font-size:11px;cursor:pointer;letter-spacing:0.1em;margin-bottom:8px">TEST CONNECTION</button>' +
+    '</div>' +
+    '<div class="config-section">' +
+    '<div class="config-title">Sync Health</div>' +
+    '<div class="stat-grid" style="margin-top:8px">' +
+    '<div class="stat-card"><div class="stat-label">Last Synced</div><div class="stat-value" style="font-size:14px;color:'+(lastSynced?'#22c55e':'#6b7280')+'">'+(lastSynced?(fmtTime(lastSynced)+' '+fmtDate(lastSynced)):'NEVER')+'</div></div>' +
+    '<div class="stat-card"><div class="stat-label">Pending Changes</div><div class="stat-value" style="font-size:14px;color:'+(pendingSync?'#ef4444':'#22c55e')+'">'+(pendingSync?'YES — WILL RETRY':'NONE')+'</div></div>' +
+    '</div>' +
+    '</div>' +
+    '<div class="config-section">' +
+    '<div class="config-title">Local Data</div>' +
+    '<div class="config-text">Jobs are saved locally on this device. Connect Google Sheets to share with crew.</div>' +
+    '<div class="stat-grid" style="margin-top:8px">' +
+    '<div class="stat-card"><div class="stat-label">Jobs Stored</div><div class="stat-value" style="color:#f97316">'+jobs.length+'</div></div>' +
+    '<div class="stat-card"><div class="stat-label">Sync Status</div><div class="stat-value" style="font-size:14px;color:'+(sheetUrl?'#22c55e':'#6b7280')+'">'+(sheetUrl?'LINKED':'NOT SET')+'</div></div>' +
+    '</div>' +
+    '<button onclick="if(confirm(\'Clear all job data?\')){jobs=[];saveJobs();render()}" style="width:100%;background:transparent;border:1px solid #ef444430;color:#ef4444;border-radius:10px;padding:12px;font-family:\'IBM Plex Mono\',monospace;font-size:10px;cursor:pointer;letter-spacing:0.1em;margin-top:8px">CLEAR ALL DATA</button>' +
+    '</div>' +
+    '<div class="config-section">' +
+    '<div class="config-title">Crew Members</div>' +
+    '<div class="config-text">Active crew: Tyler (Owner) · Makana (Crew Runner) · Jack (Crew — Gainesville)</div>' +
+    '</div>';
+}
+</script>
 </body>
 </html>
